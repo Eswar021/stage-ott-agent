@@ -1,0 +1,197 @@
+{
+  "last_event_id": "oua-029659",
+  "last_known_at": "2026-10-15T15:36:12.000Z",
+  "user_id": "U-04741",
+  "active_goal": null,
+  "last_decision_id": "D-4c7c5e292df8dda21b70",
+  "active_plan": null,
+  "facts": {
+    "user_id": "U-04741",
+    "dialect": null,
+    "language": null,
+    "subscription_status": "active",
+    "signup_at": "2024-10-02T20:16:39.711Z",
+    "signup_age_days": 742.9259292708333,
+    "plan_started_at": "2026-09-27T12:00:35.533Z",
+    "plan_ends_at": "2026-10-27T12:00:35.533Z",
+    "ever_paid": true,
+    "notifications_opt_in": true,
+    "whatsapp_opt_in": true,
+    "provenance": {
+      "dialect": {
+        "value": null,
+        "status": "unknown",
+        "source": "app_settings_feed",
+        "evidence_refs": [
+          "event:oua-029659"
+        ],
+        "known_at": "2026-10-15T15:36:12.000Z",
+        "freshness_s": 10428.0,
+        "conflicts": [],
+        "resolution": "Current fresh app setting determines displayed dialect; no profile/link substitution for invalid settings.",
+        "raw_value": "d7"
+      },
+      "language": {
+        "value": null,
+        "status": "unknown",
+        "source": "app_settings_feed",
+        "evidence_refs": [
+          "event:oua-029659"
+        ],
+        "known_at": "2026-10-15T15:36:12.000Z",
+        "freshness_s": 10428.0,
+        "conflicts": [],
+        "resolution": ""
+      },
+      "signup_at": {
+        "value": "2024-10-02T20:16:39.711Z",
+        "status": "known",
+        "source": "profile_or_signup_event",
+        "evidence_refs": [
+          "profile:U-04741@2026-09-29T07:43:14.130Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": ""
+      },
+      "subscription_status": {
+        "value": "active",
+        "status": "known",
+        "source": "billing_events_reconciled_with_profile",
+        "evidence_refs": [
+          "profile:U-04741@2026-09-29T07:43:14.130Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Compare event-time estimate with fact update time; preserve ever-paid evidence and expire dated plans."
+      },
+      "ever_paid": {
+        "value": true,
+        "status": "known",
+        "source": "paid_history_or_profile",
+        "evidence_refs": [
+          "event:34ac7f15-3c38-4822-b345-44d43f6e5bef"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Paid events take precedence. Conflicting profile-only paid/never versions leave lifetime payment unknown."
+      },
+      "notifications_opt_in": {
+        "value": true,
+        "status": "known",
+        "source": "consent_profile_with_optout_override",
+        "evidence_refs": [
+          "profile:U-04741@2026-09-29T07:43:14.130Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Only explicit affirmative consent permits an outbound channel."
+      },
+      "whatsapp_opt_in": {
+        "value": true,
+        "status": "known",
+        "source": "consent_profile_with_optout_override",
+        "evidence_refs": [
+          "profile:U-04741@2026-09-29T07:43:14.130Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Only explicit affirmative consent permits an outbound channel."
+      }
+    },
+    "behavior": {
+      "play_count": 19,
+      "completion_count": 11,
+      "play_days_14d": [],
+      "top_genres": [
+        "Romance",
+        "Action",
+        "Devotional"
+      ],
+      "genre_counts": {
+        "Romance": 19,
+        "Action": 11,
+        "Devotional": 6
+      },
+      "unfinished_series": [
+        {
+          "content_slug": "guka-kosusa-d2",
+          "last_play_at": "2026-09-30T15:48:17.968Z",
+          "recency_uncertain": false,
+          "next_episode_id": "guka-kosusa-d2-s1e5",
+          "next_episode_number": 5,
+          "remaining_count": 37,
+          "evidence_refs": [
+            "event:0626628d-97d9-410c-b13d-b314ebfc4542",
+            "episodes:guka-kosusa-d2"
+          ]
+        },
+        {
+          "content_slug": "molo-d2",
+          "last_play_at": "2026-09-27T18:12:51.096Z",
+          "recency_uncertain": false,
+          "next_episode_id": "molo-d2-s1e7",
+          "next_episode_number": 7,
+          "remaining_count": 1,
+          "evidence_refs": [
+            "event:d8582422-8c68-4deb-ae77-1a3ade9f78b7",
+            "episodes:molo-d2"
+          ]
+        },
+        {
+          "content_slug": "kopibha-niya-d1",
+          "last_play_at": "2026-09-17T13:38:59.623Z",
+          "recency_uncertain": false,
+          "next_episode_id": "kopibha-niya-d1-s1e1",
+          "next_episode_number": 1,
+          "remaining_count": 8,
+          "evidence_refs": [
+            "event:fa4f0bf5-9abb-424c-9b76-8e993ad3a572",
+            "episodes:kopibha-niya-d1"
+          ]
+        }
+      ],
+      "prior_app_open_count_14d": 15,
+      "uncertain_play_count_14d": 0,
+      "uncertain_open_count_14d": 0,
+      "last_play_at": "2026-09-30T15:48:17.968Z",
+      "last_app_open_before_trigger": "2026-10-15T15:36:00.000Z",
+      "play_evidence": [
+        "event:9c2ce19a-a2da-4b4e-bc44-77b4c12e66c5",
+        "event:2313a8d9-868b-4ca4-b88e-6146ad7b9c98",
+        "event:d8582422-8c68-4deb-ae77-1a3ade9f78b7",
+        "event:7025434e-8a95-4245-a009-1ecf139491d3",
+        "event:0626628d-97d9-410c-b13d-b314ebfc4542"
+      ],
+      "completion_evidence": [
+        "event:aba51517-773d-46f0-89a5-ca184ed4db6f",
+        "event:4a936e7b-8b36-49a6-9298-b273f3c561f4",
+        "event:fa361ce2-a766-475b-9755-369944f5a6d3"
+      ],
+      "recent_open_evidence": [
+        "event:oua-029655",
+        "event:oua-029656",
+        "event:oua-029658"
+      ]
+    },
+    "observation_coverage": {
+      "start": "2026-08-31T18:30:00.000Z",
+      "end": "2026-10-15T18:30:00.000Z",
+      "lifetime_from_signup": false,
+      "covers_prior_14d": true,
+      "assumption": "Supplied historical export covers instrumented app activity within its stated window; offline arrivals can still revise facts."
+    },
+    "trigger_buffered_s": 0.0,
+    "trigger_is_fresh": true
+  },
+  "goal_history": [],
+  "facts_as_of": "2026-10-15T18:30:00.000Z",
+  "observed_outcomes": [],
+  "learning": [],
+  "revision": 31
+}

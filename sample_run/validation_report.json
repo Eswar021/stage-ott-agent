@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "decisions_checked": 2769,
+  "actions_checked": 887,
+  "issues": [],
+  "issue_count": 0,
+  "checks": [
+    "holdout",
+    "idempotency",
+    "timing",
+    "call_budgets",
+    "no_action_reasons",
+    "independent_policy_revalidation",
+    "daily_caps",
+    "proposal_export_consistency"
+  ]
+}

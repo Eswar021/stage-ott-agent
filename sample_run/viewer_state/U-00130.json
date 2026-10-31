@@ -1,0 +1,187 @@
+{
+  "last_event_id": "oua-000827",
+  "last_known_at": "2026-10-14T14:51:37.000Z",
+  "user_id": "U-00130",
+  "active_goal": null,
+  "last_decision_id": "D-fb84faff9e3aaa6fcc8d",
+  "active_plan": null,
+  "facts": {
+    "user_id": "U-00130",
+    "dialect": "d1",
+    "language": null,
+    "subscription_status": "never",
+    "signup_at": "2026-05-07T13:28:00.313Z",
+    "signup_age_days": 161.20971859953704,
+    "plan_started_at": null,
+    "plan_ends_at": null,
+    "ever_paid": false,
+    "notifications_opt_in": true,
+    "whatsapp_opt_in": true,
+    "provenance": {
+      "dialect": {
+        "value": "d1",
+        "status": "known",
+        "source": "app_settings_feed",
+        "evidence_refs": [
+          "event:oua-000827"
+        ],
+        "known_at": "2026-10-14T14:51:37.000Z",
+        "freshness_s": 99503.0,
+        "conflicts": [],
+        "resolution": "Current fresh app setting determines displayed dialect; no profile/link substitution for invalid settings.",
+        "raw_value": "d1"
+      },
+      "language": {
+        "value": null,
+        "status": "unknown",
+        "source": "app_settings_feed",
+        "evidence_refs": [
+          "event:oua-000827"
+        ],
+        "known_at": "2026-10-14T14:51:37.000Z",
+        "freshness_s": 99503.0,
+        "conflicts": [],
+        "resolution": ""
+      },
+      "signup_at": {
+        "value": "2026-05-07T13:28:00.313Z",
+        "status": "known",
+        "source": "profile_or_signup_event",
+        "evidence_refs": [
+          "profile:U-00130@2026-09-29T07:11:01.562Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": ""
+      },
+      "subscription_status": {
+        "value": "never",
+        "status": "known",
+        "source": "billing_events_reconciled_with_profile",
+        "evidence_refs": [
+          "profile:U-00130@2026-09-29T07:11:01.562Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Compare event-time estimate with fact update time; preserve ever-paid evidence and expire dated plans."
+      },
+      "ever_paid": {
+        "value": false,
+        "status": "known",
+        "source": "paid_history_or_profile",
+        "evidence_refs": [
+          "profile:U-00130@2026-09-29T07:11:01.562Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Paid events take precedence. Conflicting profile-only paid/never versions leave lifetime payment unknown."
+      },
+      "notifications_opt_in": {
+        "value": true,
+        "status": "known",
+        "source": "consent_profile_with_optout_override",
+        "evidence_refs": [
+          "profile:U-00130@2026-09-29T07:11:01.562Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Only explicit affirmative consent permits an outbound channel."
+      },
+      "whatsapp_opt_in": {
+        "value": true,
+        "status": "known",
+        "source": "consent_profile_with_optout_override",
+        "evidence_refs": [
+          "profile:U-00130@2026-09-29T07:11:01.562Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Only explicit affirmative consent permits an outbound channel."
+      }
+    },
+    "behavior": {
+      "play_count": 5,
+      "completion_count": 1,
+      "play_days_14d": [
+        "2026-10-04",
+        "2026-10-06"
+      ],
+      "top_genres": [
+        "Drama",
+        "Romance",
+        "Thriller"
+      ],
+      "genre_counts": {
+        "Drama": 3,
+        "Romance": 3,
+        "Thriller": 2,
+        "Devotional": 1
+      },
+      "unfinished_series": [
+        {
+          "content_slug": "kopibha-niya-d1",
+          "last_play_at": "2026-10-06T08:03:01.000Z",
+          "recency_uncertain": false,
+          "next_episode_id": "kopibha-niya-d1-s1e1",
+          "next_episode_number": 1,
+          "remaining_count": 8,
+          "evidence_refs": [
+            "event:oua-000818",
+            "episodes:kopibha-niya-d1"
+          ]
+        },
+        {
+          "content_slug": "bagugu-gigupi-d1",
+          "last_play_at": "2026-09-08T14:09:55.446Z",
+          "recency_uncertain": false,
+          "next_episode_id": "bagugu-gigupi-d1-s1e2",
+          "next_episode_number": 2,
+          "remaining_count": 7,
+          "evidence_refs": [
+            "event:b2f35dbb-6797-4bb2-8d34-7b0d587bc1e6",
+            "episodes:bagugu-gigupi-d1"
+          ]
+        }
+      ],
+      "prior_app_open_count_14d": 7,
+      "uncertain_play_count_14d": 0,
+      "uncertain_open_count_14d": 0,
+      "last_play_at": "2026-10-06T08:03:01.000Z",
+      "last_app_open_before_trigger": "2026-10-14T14:51:00.000Z",
+      "play_evidence": [
+        "event:39a364e3-b292-4924-a7b1-de387d6cec27",
+        "event:b2f35dbb-6797-4bb2-8d34-7b0d587bc1e6",
+        "event:69723941-f920-4c9b-8488-cb9c75e7212c",
+        "event:oua-000815",
+        "event:oua-000818"
+      ],
+      "completion_evidence": [
+        "event:0943506a-3aed-4ff3-a039-b249e3da498b"
+      ],
+      "recent_open_evidence": [
+        "event:oua-000823",
+        "event:oua-000825",
+        "event:oua-000826"
+      ]
+    },
+    "observation_coverage": {
+      "start": "2026-08-31T18:30:00.000Z",
+      "end": "2026-10-15T18:30:00.000Z",
+      "lifetime_from_signup": false,
+      "covers_prior_14d": true,
+      "assumption": "Supplied historical export covers instrumented app activity within its stated window; offline arrivals can still revise facts."
+    },
+    "trigger_buffered_s": 0.0,
+    "trigger_is_fresh": true
+  },
+  "goal_history": [],
+  "facts_as_of": "2026-10-15T18:30:00.000Z",
+  "observed_outcomes": [],
+  "learning": [],
+  "revision": 16
+}

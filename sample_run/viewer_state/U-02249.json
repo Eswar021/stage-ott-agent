@@ -1,0 +1,170 @@
+{
+  "last_event_id": "oua-014557",
+  "last_known_at": "2026-10-12T03:37:29.000Z",
+  "user_id": "U-02249",
+  "active_goal": null,
+  "last_decision_id": "D-84a8860724e9bab2c347",
+  "active_plan": null,
+  "facts": {
+    "user_id": "U-02249",
+    "dialect": "d1",
+    "language": null,
+    "subscription_status": "unknown",
+    "signup_at": null,
+    "signup_age_days": null,
+    "plan_started_at": null,
+    "plan_ends_at": null,
+    "ever_paid": null,
+    "notifications_opt_in": false,
+    "whatsapp_opt_in": false,
+    "provenance": {
+      "dialect": {
+        "value": "d1",
+        "status": "known",
+        "source": "app_settings_feed",
+        "evidence_refs": [
+          "event:oua-014557"
+        ],
+        "known_at": "2026-10-12T03:37:29.000Z",
+        "freshness_s": 312751.0,
+        "conflicts": [],
+        "resolution": "Current fresh app setting determines displayed dialect; no profile/link substitution for invalid settings.",
+        "raw_value": "d1"
+      },
+      "language": {
+        "value": null,
+        "status": "unknown",
+        "source": "app_settings_feed",
+        "evidence_refs": [
+          "event:oua-014557"
+        ],
+        "known_at": "2026-10-12T03:37:29.000Z",
+        "freshness_s": 312751.0,
+        "conflicts": [],
+        "resolution": ""
+      },
+      "signup_at": {
+        "value": null,
+        "status": "unknown",
+        "source": "profile_or_signup_event",
+        "evidence_refs": [],
+        "known_at": null,
+        "freshness_s": null,
+        "conflicts": [],
+        "resolution": ""
+      },
+      "subscription_status": {
+        "value": "unknown",
+        "status": "unknown",
+        "source": "billing_events_reconciled_with_profile",
+        "evidence_refs": [],
+        "known_at": null,
+        "freshness_s": null,
+        "conflicts": [],
+        "resolution": "Compare event-time estimate with fact update time; preserve ever-paid evidence and expire dated plans."
+      },
+      "ever_paid": {
+        "value": null,
+        "status": "unknown",
+        "source": "paid_history_or_profile",
+        "evidence_refs": [],
+        "known_at": null,
+        "freshness_s": null,
+        "conflicts": [],
+        "resolution": "Paid events take precedence. Conflicting profile-only paid/never versions leave lifetime payment unknown."
+      },
+      "notifications_opt_in": {
+        "value": false,
+        "status": "unknown",
+        "source": "consent_profile_with_optout_override",
+        "evidence_refs": [],
+        "known_at": null,
+        "freshness_s": null,
+        "conflicts": [],
+        "resolution": "Only explicit affirmative consent permits an outbound channel."
+      },
+      "whatsapp_opt_in": {
+        "value": false,
+        "status": "unknown",
+        "source": "consent_profile_with_optout_override",
+        "evidence_refs": [],
+        "known_at": null,
+        "freshness_s": null,
+        "conflicts": [],
+        "resolution": "Only explicit affirmative consent permits an outbound channel."
+      }
+    },
+    "behavior": {
+      "play_count": 2,
+      "completion_count": 1,
+      "play_days_14d": [
+        "2026-10-09"
+      ],
+      "top_genres": [
+        "Comedy",
+        "Crime"
+      ],
+      "genre_counts": {
+        "Comedy": 2,
+        "Crime": 2
+      },
+      "unfinished_series": [
+        {
+          "content_slug": "labha-d1",
+          "last_play_at": "2026-10-09T16:00:31.000Z",
+          "recency_uncertain": false,
+          "next_episode_id": "labha-d1-s1e2",
+          "next_episode_number": 2,
+          "remaining_count": 5,
+          "evidence_refs": [
+            "event:oua-014552",
+            "episodes:labha-d1"
+          ]
+        },
+        {
+          "content_slug": "kone-jaja-d1",
+          "last_play_at": "2026-10-01T13:09:31.583Z",
+          "recency_uncertain": false,
+          "next_episode_id": "kone-jaja-d1-s1e1",
+          "next_episode_number": 1,
+          "remaining_count": 39,
+          "evidence_refs": [
+            "event:oua-014543",
+            "episodes:kone-jaja-d1"
+          ]
+        }
+      ],
+      "prior_app_open_count_14d": 7,
+      "uncertain_play_count_14d": 0,
+      "uncertain_open_count_14d": 0,
+      "last_play_at": "2026-10-09T16:00:31.000Z",
+      "last_app_open_before_trigger": "2026-10-12T03:37:00.000Z",
+      "play_evidence": [
+        "event:oua-014543",
+        "event:oua-014552"
+      ],
+      "completion_evidence": [
+        "event:oua-014553"
+      ],
+      "recent_open_evidence": [
+        "event:oua-014554",
+        "event:oua-014550",
+        "event:oua-014556"
+      ]
+    },
+    "observation_coverage": {
+      "start": "2026-08-31T18:30:00.000Z",
+      "end": "2026-10-15T18:30:00.000Z",
+      "lifetime_from_signup": false,
+      "covers_prior_14d": true,
+      "assumption": "Supplied historical export covers instrumented app activity within its stated window; offline arrivals can still revise facts."
+    },
+    "trigger_buffered_s": 0.0,
+    "trigger_is_fresh": true
+  },
+  "goal_history": [],
+  "facts_as_of": "2026-10-15T18:30:00.000Z",
+  "observed_outcomes": [],
+  "learning": [],
+  "revision": 18
+}

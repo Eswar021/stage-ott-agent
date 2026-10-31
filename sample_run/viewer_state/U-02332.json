@@ -1,0 +1,275 @@
+{
+  "last_event_id": "oua-014921",
+  "last_known_at": "2026-10-15T06:48:10.000Z",
+  "user_id": "U-02332",
+  "active_goal": null,
+  "last_decision_id": "D-470923e2699477c9927e",
+  "active_plan": null,
+  "facts": {
+    "user_id": "U-02332",
+    "dialect": "d4",
+    "language": null,
+    "subscription_status": "lapsed",
+    "signup_at": "2026-08-07T09:32:43.084Z",
+    "signup_age_days": 69.37311245370371,
+    "plan_started_at": "2026-09-14T12:34:37.970Z",
+    "plan_ends_at": "2026-10-14T12:34:37.970Z",
+    "ever_paid": true,
+    "notifications_opt_in": true,
+    "whatsapp_opt_in": true,
+    "provenance": {
+      "dialect": {
+        "value": "d4",
+        "status": "known",
+        "source": "app_settings_feed",
+        "evidence_refs": [
+          "event:oua-014921"
+        ],
+        "known_at": "2026-10-15T06:48:10.000Z",
+        "freshness_s": 42110.0,
+        "conflicts": [
+          {
+            "source": "profile:U-02332@2026-09-29T14:03:17.346Z",
+            "value": "d2"
+          }
+        ],
+        "resolution": "Current fresh app setting determines displayed dialect; no profile/link substitution for invalid settings.",
+        "raw_value": "d4"
+      },
+      "language": {
+        "value": null,
+        "status": "unknown",
+        "source": "app_settings_feed",
+        "evidence_refs": [
+          "event:oua-014921"
+        ],
+        "known_at": "2026-10-15T06:48:10.000Z",
+        "freshness_s": 42110.0,
+        "conflicts": [],
+        "resolution": ""
+      },
+      "signup_at": {
+        "value": "2026-08-07T09:32:43.084Z",
+        "status": "known",
+        "source": "profile_or_signup_event",
+        "evidence_refs": [
+          "profile:U-02332@2026-09-29T14:03:17.346Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": ""
+      },
+      "subscription_status": {
+        "value": "lapsed",
+        "status": "known",
+        "source": "billing_events_reconciled_with_profile",
+        "evidence_refs": [
+          "profile:U-02332@2026-09-29T14:03:17.346Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [
+          {
+            "reason": "plan_window_elapsed"
+          }
+        ],
+        "resolution": "Compare event-time estimate with fact update time; preserve ever-paid evidence and expire dated plans."
+      },
+      "ever_paid": {
+        "value": true,
+        "status": "known",
+        "source": "paid_history_or_profile",
+        "evidence_refs": [
+          "event:4be69a99-e281-46bd-964d-a34ba9207fa6"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Paid events take precedence. Conflicting profile-only paid/never versions leave lifetime payment unknown."
+      },
+      "notifications_opt_in": {
+        "value": true,
+        "status": "known",
+        "source": "consent_profile_with_optout_override",
+        "evidence_refs": [
+          "profile:U-02332@2026-09-29T14:03:17.346Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Only explicit affirmative consent permits an outbound channel."
+      },
+      "whatsapp_opt_in": {
+        "value": true,
+        "status": "known",
+        "source": "consent_profile_with_optout_override",
+        "evidence_refs": [
+          "profile:U-02332@2026-09-29T14:03:17.346Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Only explicit affirmative consent permits an outbound channel."
+      }
+    },
+    "behavior": {
+      "play_count": 9,
+      "completion_count": 3,
+      "play_days_14d": [
+        "2026-10-11",
+        "2026-10-12",
+        "2026-10-15"
+      ],
+      "top_genres": [
+        "Family",
+        "Drama",
+        "Romance"
+      ],
+      "genre_counts": {
+        "Family": 7,
+        "Drama": 5,
+        "Romance": 2,
+        "Thriller": 1,
+        "Devotional": 1
+      },
+      "unfinished_series": [
+        {
+          "content_slug": "logu-bhachu-d4",
+          "last_play_at": "2026-10-11T16:43:41.000Z",
+          "recency_uncertain": false,
+          "next_episode_id": "logu-bhachu-d4-s1e2",
+          "next_episode_number": 2,
+          "remaining_count": 30,
+          "evidence_refs": [
+            "event:oua-014912",
+            "episodes:logu-bhachu-d4"
+          ]
+        },
+        {
+          "content_slug": "bhaja-moguba-d2",
+          "last_play_at": "2026-09-03T10:56:03.851Z",
+          "recency_uncertain": false,
+          "next_episode_id": "bhaja-moguba-d2-s1e1",
+          "next_episode_number": 1,
+          "remaining_count": 34,
+          "evidence_refs": [
+            "event:242d5fae-1cf4-4ecd-a404-bb9451feb028",
+            "episodes:bhaja-moguba-d2"
+          ]
+        }
+      ],
+      "prior_app_open_count_14d": 8,
+      "uncertain_play_count_14d": 0,
+      "uncertain_open_count_14d": 0,
+      "last_play_at": "2026-10-15T06:48:10.000Z",
+      "last_app_open_before_trigger": "2026-10-15T06:45:00.000Z",
+      "play_evidence": [
+        "event:26a2c12d-cb1d-4d78-a967-9b6206b0d1da",
+        "event:b4656785-4fb5-4001-b2e8-cb9cb94c640e",
+        "event:oua-014912",
+        "event:oua-014918",
+        "event:oua-014921"
+      ],
+      "completion_evidence": [
+        "event:f3ad6846-8b51-45b7-87d5-5233ae396dff",
+        "event:3451c5a6-0bbd-40e5-b8ea-d2ec95e802a4",
+        "event:oua-014913"
+      ],
+      "recent_open_evidence": [
+        "event:oua-014914",
+        "event:oua-014919",
+        "event:oua-014920"
+      ]
+    },
+    "observation_coverage": {
+      "start": "2026-08-31T18:30:00.000Z",
+      "end": "2026-10-15T18:30:00.000Z",
+      "lifetime_from_signup": false,
+      "covers_prior_14d": true,
+      "assumption": "Supplied historical export covers instrumented app activity within its stated window; offline arrivals can still revise facts."
+    },
+    "trigger_buffered_s": 0.0,
+    "trigger_is_fresh": true
+  },
+  "goal_history": [
+    {
+      "goal_instance_id": "G-f232502d0f549ddeec84",
+      "id": "G08",
+      "goal_id": "G08",
+      "user_id": "U-02332",
+      "started_at": "2026-10-01T14:25:16.637Z",
+      "deadline": "2026-10-08T14:25:16.637Z",
+      "success": {
+        "event": "play_started",
+        "condition": "a title released in the 30 days before the goal start",
+        "window_hours": 168
+      },
+      "version": "G08@2026-09-30",
+      "target_slug": null,
+      "status": "failed",
+      "evidence": [
+        "profile:U-02332@2026-09-29T14:03:17.346Z",
+        "goal_rule:G08"
+      ],
+      "action_ids": [
+        "A-46d59fd6f47ba09ef000"
+      ],
+      "rule_history": [],
+      "plan": {
+        "intended_behavior_change": "try_new_release_7d",
+        "review_on": [
+          "goal_success_signal",
+          "subscription_change",
+          "dialect_change",
+          "goal_deadline",
+          "goal_rule_correction"
+        ]
+      },
+      "reason_summary": "Choose a measurable lifecycle step from code-proven eligibility, with proportionate home-page assistance.",
+      "judgment": {
+        "goal_instance_id": "G-f232502d0f549ddeec84",
+        "goal_id": "G08",
+        "user_id": "U-02332",
+        "rule_version": "G08@2026-09-30",
+        "started_at": "2026-10-01T14:25:16.637Z",
+        "deadline": "2026-10-08T14:25:16.637Z",
+        "judged_at": "2026-10-15T18:30:00.000Z",
+        "status": "failed",
+        "evidence": [],
+        "evidence_event_ids": [],
+        "success_at": null,
+        "coverage_complete": true,
+        "rule_history": [],
+        "reason": "The complete observed goal window ended without its required signal.",
+        "attribution": {
+          "classification": "no_success_observed",
+          "linked_success_event_ids": [],
+          "observed_exposure_event_ids": [
+            "oua-014903"
+          ],
+          "confirmed_delivery_event_ids": [],
+          "causal_claim": false,
+          "note": "Temporal/session linkage is descriptive; causal impact is estimated by randomized assignment."
+        }
+      }
+    }
+  ],
+  "facts_as_of": "2026-10-15T18:30:00.000Z",
+  "observed_outcomes": [
+    {
+      "goal_instance_id": "G-f232502d0f549ddeec84",
+      "status": "failed",
+      "evidence": []
+    }
+  ],
+  "learning": [
+    {
+      "goal_instance_id": "G-f232502d0f549ddeec84",
+      "observed_status": "failed",
+      "evidence": [],
+      "note": "Observed result, not an individual causal effect."
+    }
+  ],
+  "revision": 22
+}

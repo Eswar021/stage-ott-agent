@@ -1,0 +1,167 @@
+{
+  "last_event_id": "oua-026468",
+  "last_known_at": "2026-10-15T04:29:04.000Z",
+  "user_id": "U-04181",
+  "active_goal": null,
+  "last_decision_id": "D-ab6211655030972466cc",
+  "active_plan": null,
+  "facts": {
+    "user_id": "U-04181",
+    "dialect": "d1",
+    "language": null,
+    "subscription_status": "never",
+    "signup_at": "2024-12-24T03:05:32.760Z",
+    "signup_age_days": 660.6419819444445,
+    "plan_started_at": null,
+    "plan_ends_at": null,
+    "ever_paid": false,
+    "notifications_opt_in": false,
+    "whatsapp_opt_in": false,
+    "provenance": {
+      "dialect": {
+        "value": "d1",
+        "status": "known",
+        "source": "app_settings_feed",
+        "evidence_refs": [
+          "event:oua-026468"
+        ],
+        "known_at": "2026-10-15T04:29:04.000Z",
+        "freshness_s": 50456.0,
+        "conflicts": [],
+        "resolution": "Current fresh app setting determines displayed dialect; no profile/link substitution for invalid settings.",
+        "raw_value": "d1"
+      },
+      "language": {
+        "value": null,
+        "status": "unknown",
+        "source": "app_settings_feed",
+        "evidence_refs": [
+          "event:oua-026468"
+        ],
+        "known_at": "2026-10-15T04:29:04.000Z",
+        "freshness_s": 50456.0,
+        "conflicts": [],
+        "resolution": ""
+      },
+      "signup_at": {
+        "value": "2024-12-24T03:05:32.760Z",
+        "status": "known",
+        "source": "profile_or_signup_event",
+        "evidence_refs": [
+          "profile:U-04181@2026-09-29T01:14:17.616Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": ""
+      },
+      "subscription_status": {
+        "value": "never",
+        "status": "known",
+        "source": "billing_events_reconciled_with_profile",
+        "evidence_refs": [
+          "profile:U-04181@2026-09-29T01:14:17.616Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Compare event-time estimate with fact update time; preserve ever-paid evidence and expire dated plans."
+      },
+      "ever_paid": {
+        "value": false,
+        "status": "known",
+        "source": "paid_history_or_profile",
+        "evidence_refs": [
+          "profile:U-04181@2026-09-29T01:14:17.616Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Paid events take precedence. Conflicting profile-only paid/never versions leave lifetime payment unknown."
+      },
+      "notifications_opt_in": {
+        "value": false,
+        "status": "known",
+        "source": "consent_profile_with_optout_override",
+        "evidence_refs": [
+          "profile:U-04181@2026-09-29T01:14:17.616Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Only explicit affirmative consent permits an outbound channel."
+      },
+      "whatsapp_opt_in": {
+        "value": false,
+        "status": "known",
+        "source": "consent_profile_with_optout_override",
+        "evidence_refs": [
+          "profile:U-04181@2026-09-29T01:14:17.616Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Only explicit affirmative consent permits an outbound channel."
+      }
+    },
+    "behavior": {
+      "play_count": 2,
+      "completion_count": 1,
+      "play_days_14d": [],
+      "top_genres": [
+        "Action",
+        "Family",
+        "Devotional"
+      ],
+      "genre_counts": {
+        "Action": 2,
+        "Family": 1,
+        "Devotional": 1
+      },
+      "unfinished_series": [
+        {
+          "content_slug": "tidha-dakachu-d1",
+          "last_play_at": "2026-09-16T11:00:29.306Z",
+          "recency_uncertain": false,
+          "next_episode_id": "tidha-dakachu-d1-s1e1",
+          "next_episode_number": 1,
+          "remaining_count": 17,
+          "evidence_refs": [
+            "event:2af4861f-c874-4e5a-b3d3-9eb41daeb423",
+            "episodes:tidha-dakachu-d1"
+          ]
+        }
+      ],
+      "prior_app_open_count_14d": 2,
+      "uncertain_play_count_14d": 0,
+      "uncertain_open_count_14d": 0,
+      "last_play_at": "2026-09-19T16:26:26.633Z",
+      "last_app_open_before_trigger": "2026-10-15T04:29:00.000Z",
+      "play_evidence": [
+        "event:2af4861f-c874-4e5a-b3d3-9eb41daeb423",
+        "event:88cbdcf7-f0ce-4bf7-9f38-93a8be6cfff6"
+      ],
+      "completion_evidence": [
+        "event:738f0e89-b69c-4526-b9c9-86d58f3351e2"
+      ],
+      "recent_open_evidence": [
+        "event:oua-026465",
+        "event:oua-026467"
+      ]
+    },
+    "observation_coverage": {
+      "start": "2026-08-31T18:30:00.000Z",
+      "end": "2026-10-15T18:30:00.000Z",
+      "lifetime_from_signup": false,
+      "covers_prior_14d": true,
+      "assumption": "Supplied historical export covers instrumented app activity within its stated window; offline arrivals can still revise facts."
+    },
+    "trigger_buffered_s": 0.0,
+    "trigger_is_fresh": true
+  },
+  "goal_history": [],
+  "facts_as_of": "2026-10-15T18:30:00.000Z",
+  "observed_outcomes": [],
+  "learning": [],
+  "revision": 6
+}

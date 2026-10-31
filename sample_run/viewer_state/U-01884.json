@@ -1,0 +1,282 @@
+{
+  "last_event_id": "oua-012639",
+  "last_known_at": "2026-10-09T16:26:29.000Z",
+  "user_id": "U-01884",
+  "active_goal": null,
+  "last_decision_id": "D-a347190fd5d5978a9bbc",
+  "active_plan": null,
+  "facts": {
+    "user_id": "U-01884",
+    "dialect": "d4",
+    "language": null,
+    "subscription_status": "lapsed",
+    "signup_at": "2025-03-29T22:50:24.300Z",
+    "signup_age_days": 564.8191631944445,
+    "plan_started_at": "2026-09-07T15:45:44.756Z",
+    "plan_ends_at": "2026-10-07T15:45:44.756Z",
+    "ever_paid": true,
+    "notifications_opt_in": true,
+    "whatsapp_opt_in": false,
+    "provenance": {
+      "dialect": {
+        "value": "d4",
+        "status": "known",
+        "source": "app_settings_feed",
+        "evidence_refs": [
+          "event:oua-012639"
+        ],
+        "known_at": "2026-10-09T16:26:29.000Z",
+        "freshness_s": 525811.0,
+        "conflicts": [
+          {
+            "source": "profile:U-01884@2026-09-28T22:44:29.128Z",
+            "value": "d5"
+          }
+        ],
+        "resolution": "Current fresh app setting determines displayed dialect; no profile/link substitution for invalid settings.",
+        "raw_value": "d4"
+      },
+      "language": {
+        "value": null,
+        "status": "unknown",
+        "source": "app_settings_feed",
+        "evidence_refs": [
+          "event:oua-012639"
+        ],
+        "known_at": "2026-10-09T16:26:29.000Z",
+        "freshness_s": 525811.0,
+        "conflicts": [],
+        "resolution": ""
+      },
+      "signup_at": {
+        "value": "2025-03-29T22:50:24.300Z",
+        "status": "known",
+        "source": "profile_or_signup_event",
+        "evidence_refs": [
+          "profile:U-01884@2026-09-28T22:44:29.128Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": ""
+      },
+      "subscription_status": {
+        "value": "lapsed",
+        "status": "known",
+        "source": "billing_events_reconciled_with_profile",
+        "evidence_refs": [
+          "profile:U-01884@2026-09-28T22:44:29.128Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [
+          {
+            "reason": "plan_window_elapsed"
+          }
+        ],
+        "resolution": "Compare event-time estimate with fact update time; preserve ever-paid evidence and expire dated plans."
+      },
+      "ever_paid": {
+        "value": true,
+        "status": "known",
+        "source": "paid_history_or_profile",
+        "evidence_refs": [
+          "event:ae189800-5041-4bd7-8112-ab5801d496b0"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Paid events take precedence. Conflicting profile-only paid/never versions leave lifetime payment unknown."
+      },
+      "notifications_opt_in": {
+        "value": true,
+        "status": "known",
+        "source": "consent_profile_with_optout_override",
+        "evidence_refs": [
+          "profile:U-01884@2026-09-28T22:44:29.128Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Only explicit affirmative consent permits an outbound channel."
+      },
+      "whatsapp_opt_in": {
+        "value": false,
+        "status": "known",
+        "source": "consent_profile_with_optout_override",
+        "evidence_refs": [
+          "profile:U-01884@2026-09-28T22:44:29.128Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Only explicit affirmative consent permits an outbound channel."
+      }
+    },
+    "behavior": {
+      "play_count": 13,
+      "completion_count": 8,
+      "play_days_14d": [
+        "2026-10-02",
+        "2026-10-09"
+      ],
+      "top_genres": [
+        "Romance",
+        "Crime",
+        "Action"
+      ],
+      "genre_counts": {
+        "Romance": 9,
+        "Crime": 2,
+        "Action": 2,
+        "Family": 2,
+        "Drama": 1,
+        "Comedy": 1
+      },
+      "unfinished_series": [
+        {
+          "content_slug": "bagi-baya-d4",
+          "last_play_at": "2026-10-02T17:03:34.000Z",
+          "recency_uncertain": false,
+          "next_episode_id": "bagi-baya-d4-s1e7",
+          "next_episode_number": 7,
+          "remaining_count": 34,
+          "evidence_refs": [
+            "event:oua-012632",
+            "episodes:bagi-baya-d4"
+          ]
+        },
+        {
+          "content_slug": "raja-d4",
+          "last_play_at": "2026-10-01T17:37:58.997Z",
+          "recency_uncertain": false,
+          "next_episode_id": "raja-d4-s1e1",
+          "next_episode_number": 1,
+          "remaining_count": 30,
+          "evidence_refs": [
+            "event:oua-012629",
+            "episodes:raja-d4"
+          ]
+        }
+      ],
+      "prior_app_open_count_14d": 3,
+      "uncertain_play_count_14d": 0,
+      "uncertain_open_count_14d": 0,
+      "last_play_at": "2026-10-09T16:07:29.000Z",
+      "last_app_open_before_trigger": "2026-10-09T16:03:00.000Z",
+      "play_evidence": [
+        "event:9df6d073-336f-41c5-b7ba-56888c0cc57c",
+        "event:b3efb15f-c371-4fa0-9fec-5dca3eb79ea7",
+        "event:oua-012629",
+        "event:oua-012632",
+        "event:oua-012638"
+      ],
+      "completion_evidence": [
+        "event:be1bf8db-2f17-4911-87de-8392eba1a1dd",
+        "event:oua-012633",
+        "event:oua-012639"
+      ],
+      "recent_open_evidence": [
+        "event:oua-012630",
+        "event:oua-012634",
+        "event:oua-012636"
+      ]
+    },
+    "observation_coverage": {
+      "start": "2026-08-31T18:30:00.000Z",
+      "end": "2026-10-15T18:30:00.000Z",
+      "lifetime_from_signup": false,
+      "covers_prior_14d": true,
+      "assumption": "Supplied historical export covers instrumented app activity within its stated window; offline arrivals can still revise facts."
+    },
+    "trigger_buffered_s": 0.0,
+    "trigger_is_fresh": true
+  },
+  "goal_history": [
+    {
+      "goal_instance_id": "G-df6fda04ec60a85c49db",
+      "id": "G07",
+      "goal_id": "G07",
+      "user_id": "U-01884",
+      "started_at": "2026-10-01T17:33:59.001Z",
+      "deadline": "2026-10-04T17:33:59.001Z",
+      "success": {
+        "event": "play_started",
+        "condition": "same content_slug as the unfinished series",
+        "window_hours": 72
+      },
+      "version": "G07@2026-09-30",
+      "target_slug": "bagi-baya-d4",
+      "status": "succeeded",
+      "evidence": [
+        "event:b3efb15f-c371-4fa0-9fec-5dca3eb79ea7",
+        "episodes:bagi-baya-d4",
+        "goal_rule:G07"
+      ],
+      "action_ids": [
+        "A-f4a2b04e1eec820d8c0b"
+      ],
+      "rule_history": [],
+      "plan": {
+        "intended_behavior_change": "resume_series_3d",
+        "review_on": [
+          "goal_success_signal",
+          "subscription_change",
+          "dialect_change",
+          "goal_deadline",
+          "goal_rule_correction"
+        ]
+      },
+      "reason_summary": "Choose a measurable lifecycle step from code-proven eligibility, with proportionate home-page assistance.",
+      "judgment": {
+        "goal_instance_id": "G-df6fda04ec60a85c49db",
+        "goal_id": "G07",
+        "user_id": "U-01884",
+        "rule_version": "G07@2026-09-30",
+        "started_at": "2026-10-01T17:33:59.001Z",
+        "deadline": "2026-10-04T17:33:59.001Z",
+        "judged_at": "2026-10-15T18:30:00.000Z",
+        "status": "succeeded",
+        "evidence": [
+          "event:oua-012632"
+        ],
+        "evidence_event_ids": [
+          "oua-012632"
+        ],
+        "success_at": "2026-10-02T17:03:34.000Z",
+        "coverage_complete": true,
+        "rule_history": [],
+        "reason": "Required signal observed after commitment and within its recorded window.",
+        "attribution": {
+          "classification": "success_without_observed_action_link",
+          "linked_success_event_ids": [],
+          "observed_exposure_event_ids": [],
+          "confirmed_delivery_event_ids": [],
+          "causal_claim": false,
+          "note": "Temporal/session linkage is descriptive; causal impact is estimated by randomized assignment."
+        }
+      }
+    }
+  ],
+  "facts_as_of": "2026-10-15T18:30:00.000Z",
+  "observed_outcomes": [
+    {
+      "goal_instance_id": "G-df6fda04ec60a85c49db",
+      "status": "succeeded",
+      "evidence": [
+        "event:oua-012632"
+      ]
+    }
+  ],
+  "learning": [
+    {
+      "goal_instance_id": "G-df6fda04ec60a85c49db",
+      "observed_status": "succeeded",
+      "evidence": [
+        "event:oua-012632"
+      ],
+      "note": "Observed result, not an individual causal effect."
+    }
+  ],
+  "revision": 13
+}

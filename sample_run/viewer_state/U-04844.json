@@ -1,0 +1,190 @@
+{
+  "last_event_id": "oua-030407",
+  "last_known_at": "2026-10-14T13:13:18.000Z",
+  "user_id": "U-04844",
+  "active_goal": null,
+  "last_decision_id": "D-74031f5e8a46e4f18b9b",
+  "active_plan": null,
+  "facts": {
+    "user_id": "U-04844",
+    "dialect": "d1",
+    "language": null,
+    "subscription_status": "lapsed",
+    "signup_at": "2026-08-07T18:56:51.123Z",
+    "signup_age_days": 68.98135274305555,
+    "plan_started_at": "2026-09-06T06:12:57.549Z",
+    "plan_ends_at": "2026-10-06T06:12:57.549Z",
+    "ever_paid": true,
+    "notifications_opt_in": false,
+    "whatsapp_opt_in": true,
+    "provenance": {
+      "dialect": {
+        "value": "d1",
+        "status": "known",
+        "source": "app_settings_feed",
+        "evidence_refs": [
+          "event:oua-030407"
+        ],
+        "known_at": "2026-10-14T13:13:18.000Z",
+        "freshness_s": 105402.0,
+        "conflicts": [],
+        "resolution": "Current fresh app setting determines displayed dialect; no profile/link substitution for invalid settings.",
+        "raw_value": "d1"
+      },
+      "language": {
+        "value": null,
+        "status": "unknown",
+        "source": "app_settings_feed",
+        "evidence_refs": [
+          "event:oua-030407"
+        ],
+        "known_at": "2026-10-14T13:13:18.000Z",
+        "freshness_s": 105402.0,
+        "conflicts": [],
+        "resolution": ""
+      },
+      "signup_at": {
+        "value": "2026-08-07T18:56:51.123Z",
+        "status": "known",
+        "source": "profile_or_signup_event",
+        "evidence_refs": [
+          "profile:U-04844@2026-09-28T23:29:57.608Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": ""
+      },
+      "subscription_status": {
+        "value": "lapsed",
+        "status": "known",
+        "source": "billing_events_reconciled_with_profile",
+        "evidence_refs": [
+          "profile:U-04844@2026-09-28T23:29:57.608Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [
+          {
+            "reason": "plan_window_elapsed"
+          }
+        ],
+        "resolution": "Compare event-time estimate with fact update time; preserve ever-paid evidence and expire dated plans."
+      },
+      "ever_paid": {
+        "value": true,
+        "status": "known",
+        "source": "paid_history_or_profile",
+        "evidence_refs": [
+          "event:7c7cb635-ee12-4411-b2f6-7311c5c30f74"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Paid events take precedence. Conflicting profile-only paid/never versions leave lifetime payment unknown."
+      },
+      "notifications_opt_in": {
+        "value": false,
+        "status": "known",
+        "source": "consent_profile_with_optout_override",
+        "evidence_refs": [
+          "profile:U-04844@2026-09-28T23:29:57.608Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Only explicit affirmative consent permits an outbound channel."
+      },
+      "whatsapp_opt_in": {
+        "value": true,
+        "status": "known",
+        "source": "consent_profile_with_optout_override",
+        "evidence_refs": [
+          "profile:U-04844@2026-09-28T23:29:57.608Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Only explicit affirmative consent permits an outbound channel."
+      }
+    },
+    "behavior": {
+      "play_count": 4,
+      "completion_count": 1,
+      "play_days_14d": [
+        "2026-10-09",
+        "2026-10-14"
+      ],
+      "top_genres": [
+        "Comedy",
+        "Family",
+        "Action"
+      ],
+      "genre_counts": {
+        "Comedy": 3,
+        "Family": 1,
+        "Action": 1,
+        "Devotional": 1
+      },
+      "unfinished_series": [
+        {
+          "content_slug": "dhada-bhate-d1",
+          "last_play_at": "2026-10-09T07:35:58.000Z",
+          "recency_uncertain": false,
+          "next_episode_id": "dhada-bhate-d1-s1e1",
+          "next_episode_number": 1,
+          "remaining_count": 7,
+          "evidence_refs": [
+            "event:oua-030403",
+            "episodes:dhada-bhate-d1"
+          ]
+        },
+        {
+          "content_slug": "dapa-pini-d1",
+          "last_play_at": "2026-09-20T14:38:52.728Z",
+          "recency_uncertain": false,
+          "next_episode_id": "dapa-pini-d1-s1e2",
+          "next_episode_number": 2,
+          "remaining_count": 55,
+          "evidence_refs": [
+            "event:6d2b96df-19c1-4b48-aca7-a9b7d02d0546",
+            "episodes:dapa-pini-d1"
+          ]
+        }
+      ],
+      "prior_app_open_count_14d": 4,
+      "uncertain_play_count_14d": 0,
+      "uncertain_open_count_14d": 0,
+      "last_play_at": "2026-10-14T13:13:18.000Z",
+      "last_app_open_before_trigger": "2026-10-14T13:10:00.000Z",
+      "play_evidence": [
+        "event:31b717b9-0e71-4295-8077-a94df8a7e4a9",
+        "event:6d2b96df-19c1-4b48-aca7-a9b7d02d0546",
+        "event:oua-030403",
+        "event:oua-030407"
+      ],
+      "completion_evidence": [
+        "event:b8384a4c-95d5-4cdf-b663-8605e4ba58bf"
+      ],
+      "recent_open_evidence": [
+        "event:oua-030399",
+        "event:oua-030404",
+        "event:oua-030405"
+      ]
+    },
+    "observation_coverage": {
+      "start": "2026-08-31T18:30:00.000Z",
+      "end": "2026-10-15T18:30:00.000Z",
+      "lifetime_from_signup": false,
+      "covers_prior_14d": true,
+      "assumption": "Supplied historical export covers instrumented app activity within its stated window; offline arrivals can still revise facts."
+    },
+    "trigger_buffered_s": 0.0,
+    "trigger_is_fresh": true
+  },
+  "goal_history": [],
+  "facts_as_of": "2026-10-15T18:30:00.000Z",
+  "observed_outcomes": [],
+  "learning": [],
+  "revision": 12
+}

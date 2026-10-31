@@ -1,0 +1,168 @@
+{
+  "last_event_id": "oua-024904",
+  "last_known_at": "2026-10-05T13:50:00.000Z",
+  "user_id": "U-03911",
+  "active_goal": null,
+  "last_decision_id": "D-2942f747b68ea4aed17d",
+  "active_plan": null,
+  "facts": {
+    "user_id": "U-03911",
+    "dialect": "d4",
+    "language": null,
+    "subscription_status": "never",
+    "signup_at": "2025-04-19T10:32:45.715Z",
+    "signup_age_days": 544.3314153356481,
+    "plan_started_at": null,
+    "plan_ends_at": null,
+    "ever_paid": false,
+    "notifications_opt_in": true,
+    "whatsapp_opt_in": true,
+    "provenance": {
+      "dialect": {
+        "value": "d4",
+        "status": "known",
+        "source": "app_settings_feed",
+        "evidence_refs": [
+          "event:oua-024904"
+        ],
+        "known_at": "2026-10-05T13:50:00.000Z",
+        "freshness_s": 880800.0,
+        "conflicts": [],
+        "resolution": "Current fresh app setting determines displayed dialect; no profile/link substitution for invalid settings.",
+        "raw_value": "d4"
+      },
+      "language": {
+        "value": null,
+        "status": "unknown",
+        "source": "app_settings_feed",
+        "evidence_refs": [
+          "event:oua-024904"
+        ],
+        "known_at": "2026-10-05T13:50:00.000Z",
+        "freshness_s": 880800.0,
+        "conflicts": [],
+        "resolution": ""
+      },
+      "signup_at": {
+        "value": "2025-04-19T10:32:45.715Z",
+        "status": "known",
+        "source": "profile_or_signup_event",
+        "evidence_refs": [
+          "profile:U-03911@2026-09-29T01:22:19.315Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": ""
+      },
+      "subscription_status": {
+        "value": "never",
+        "status": "known",
+        "source": "billing_events_reconciled_with_profile",
+        "evidence_refs": [
+          "profile:U-03911@2026-09-29T01:22:19.315Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Compare event-time estimate with fact update time; preserve ever-paid evidence and expire dated plans."
+      },
+      "ever_paid": {
+        "value": false,
+        "status": "known",
+        "source": "paid_history_or_profile",
+        "evidence_refs": [
+          "profile:U-03911@2026-09-29T01:22:19.315Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Paid events take precedence. Conflicting profile-only paid/never versions leave lifetime payment unknown."
+      },
+      "notifications_opt_in": {
+        "value": true,
+        "status": "known",
+        "source": "consent_profile_with_optout_override",
+        "evidence_refs": [
+          "profile:U-03911@2026-09-29T01:22:19.315Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Only explicit affirmative consent permits an outbound channel."
+      },
+      "whatsapp_opt_in": {
+        "value": true,
+        "status": "known",
+        "source": "consent_profile_with_optout_override",
+        "evidence_refs": [
+          "profile:U-03911@2026-09-29T01:22:19.315Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Only explicit affirmative consent permits an outbound channel."
+      }
+    },
+    "behavior": {
+      "play_count": 3,
+      "completion_count": 0,
+      "play_days_14d": [
+        "2026-10-02"
+      ],
+      "top_genres": [
+        "Thriller",
+        "Crime",
+        "Drama"
+      ],
+      "genre_counts": {
+        "Thriller": 2,
+        "Crime": 2,
+        "Drama": 1,
+        "Family": 1
+      },
+      "unfinished_series": [
+        {
+          "content_slug": "tiko-subava-d4",
+          "last_play_at": "2026-10-02T16:20:51.000Z",
+          "recency_uncertain": false,
+          "next_episode_id": "tiko-subava-d4-s1e1",
+          "next_episode_number": 1,
+          "remaining_count": 31,
+          "evidence_refs": [
+            "event:oua-024903",
+            "episodes:tiko-subava-d4"
+          ]
+        }
+      ],
+      "prior_app_open_count_14d": 1,
+      "uncertain_play_count_14d": 0,
+      "uncertain_open_count_14d": 0,
+      "last_play_at": "2026-10-02T16:20:51.000Z",
+      "last_app_open_before_trigger": "2026-10-02T16:16:00.000Z",
+      "play_evidence": [
+        "event:67702e0a-b99f-4f47-bbe5-7f169cc5f9f8",
+        "event:7a3702d0-b961-45e8-bb0f-a1f633450a46",
+        "event:oua-024903"
+      ],
+      "completion_evidence": [],
+      "recent_open_evidence": [
+        "event:oua-024901"
+      ]
+    },
+    "observation_coverage": {
+      "start": "2026-08-31T18:30:00.000Z",
+      "end": "2026-10-15T18:30:00.000Z",
+      "lifetime_from_signup": false,
+      "covers_prior_14d": true,
+      "assumption": "Supplied historical export covers instrumented app activity within its stated window; offline arrivals can still revise facts."
+    },
+    "trigger_buffered_s": 0.0,
+    "trigger_is_fresh": true
+  },
+  "goal_history": [],
+  "facts_as_of": "2026-10-15T18:30:00.000Z",
+  "observed_outcomes": [],
+  "learning": [],
+  "revision": 5
+}

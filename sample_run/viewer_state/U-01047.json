@@ -1,0 +1,171 @@
+{
+  "last_event_id": "oua-007013",
+  "last_known_at": "2026-10-14T14:43:00.000Z",
+  "user_id": "U-01047",
+  "active_goal": null,
+  "last_decision_id": "D-f0e5ff944539be778b6c",
+  "active_plan": null,
+  "facts": {
+    "user_id": "U-01047",
+    "dialect": "d6",
+    "language": null,
+    "subscription_status": "never",
+    "signup_at": "2026-09-16T05:54:33.283Z",
+    "signup_age_days": 29.524614780092595,
+    "plan_started_at": null,
+    "plan_ends_at": null,
+    "ever_paid": false,
+    "notifications_opt_in": false,
+    "whatsapp_opt_in": true,
+    "provenance": {
+      "dialect": {
+        "value": "d6",
+        "status": "known",
+        "source": "app_settings_feed",
+        "evidence_refs": [
+          "event:oua-007013"
+        ],
+        "known_at": "2026-10-14T14:43:00.000Z",
+        "freshness_s": 100020.0,
+        "conflicts": [],
+        "resolution": "Current fresh app setting determines displayed dialect; no profile/link substitution for invalid settings.",
+        "raw_value": "d6"
+      },
+      "language": {
+        "value": null,
+        "status": "unknown",
+        "source": "app_settings_feed",
+        "evidence_refs": [
+          "event:oua-007013"
+        ],
+        "known_at": "2026-10-14T14:43:00.000Z",
+        "freshness_s": 100020.0,
+        "conflicts": [],
+        "resolution": ""
+      },
+      "signup_at": {
+        "value": "2026-09-16T05:54:33.283Z",
+        "status": "known",
+        "source": "profile_or_signup_event",
+        "evidence_refs": [
+          "profile:U-01047@2026-09-29T15:01:28.297Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": ""
+      },
+      "subscription_status": {
+        "value": "never",
+        "status": "known",
+        "source": "billing_events_reconciled_with_profile",
+        "evidence_refs": [
+          "profile:U-01047@2026-09-29T15:01:28.297Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Compare event-time estimate with fact update time; preserve ever-paid evidence and expire dated plans."
+      },
+      "ever_paid": {
+        "value": false,
+        "status": "known",
+        "source": "paid_history_or_profile",
+        "evidence_refs": [
+          "profile:U-01047@2026-09-29T15:01:28.297Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Paid events take precedence. Conflicting profile-only paid/never versions leave lifetime payment unknown."
+      },
+      "notifications_opt_in": {
+        "value": false,
+        "status": "known",
+        "source": "consent_profile_with_optout_override",
+        "evidence_refs": [
+          "profile:U-01047@2026-09-29T15:01:28.297Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Only explicit affirmative consent permits an outbound channel."
+      },
+      "whatsapp_opt_in": {
+        "value": true,
+        "status": "known",
+        "source": "consent_profile_with_optout_override",
+        "evidence_refs": [
+          "profile:U-01047@2026-09-29T15:01:28.297Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Only explicit affirmative consent permits an outbound channel."
+      }
+    },
+    "behavior": {
+      "play_count": 2,
+      "completion_count": 1,
+      "play_days_14d": [
+        "2026-10-12"
+      ],
+      "top_genres": [
+        "Devotional",
+        "Thriller",
+        "Crime"
+      ],
+      "genre_counts": {
+        "Devotional": 1,
+        "Thriller": 1,
+        "Crime": 1,
+        "Drama": 1
+      },
+      "unfinished_series": [
+        {
+          "content_slug": "rasuya-moni-d6",
+          "last_play_at": "2026-09-18T13:45:11.971Z",
+          "recency_uncertain": false,
+          "next_episode_id": "rasuya-moni-d6-s1e2",
+          "next_episode_number": 2,
+          "remaining_count": 8,
+          "evidence_refs": [
+            "event:4336ce20-bf8a-4969-a01d-90fff41c7337",
+            "episodes:rasuya-moni-d6"
+          ]
+        }
+      ],
+      "prior_app_open_count_14d": 4,
+      "uncertain_play_count_14d": 0,
+      "uncertain_open_count_14d": 0,
+      "last_play_at": "2026-10-12T15:14:17.000Z",
+      "last_app_open_before_trigger": "2026-10-14T07:34:00.000Z",
+      "play_evidence": [
+        "event:4336ce20-bf8a-4969-a01d-90fff41c7337",
+        "event:oua-007012"
+      ],
+      "completion_evidence": [
+        "event:8e29da3a-4774-4318-a8e9-2b9b846a6adc"
+      ],
+      "recent_open_evidence": [
+        "event:oua-007010",
+        "event:oua-007008",
+        "event:oua-007014"
+      ]
+    },
+    "observation_coverage": {
+      "start": "2026-09-16T05:54:33.283Z",
+      "end": "2026-10-15T18:30:00.000Z",
+      "lifetime_from_signup": true,
+      "covers_prior_14d": true,
+      "assumption": "Supplied historical export covers instrumented app activity within its stated window; offline arrivals can still revise facts."
+    },
+    "trigger_buffered_s": 0.0,
+    "trigger_is_fresh": true
+  },
+  "goal_history": [],
+  "facts_as_of": "2026-10-15T18:30:00.000Z",
+  "observed_outcomes": [],
+  "learning": [],
+  "revision": 15
+}

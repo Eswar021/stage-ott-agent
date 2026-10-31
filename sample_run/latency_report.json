@@ -1,0 +1,44 @@
+{
+  "provider": "replay",
+  "model": "deterministic-lifecycle-v1",
+  "scope": "All trigger deliveries including holdout/duplicate gates and deterministic fallback. See live_openai for live-only timings.",
+  "decision_deliveries": 2769,
+  "unique_decisions": 2679,
+  "milliseconds": {
+    "p50": 0.09,
+    "p95": 5.72,
+    "p99": 7.398,
+    "max": 41.397,
+    "mean": 1.709
+  },
+  "over_60_seconds": 0,
+  "over_300_seconds": 0,
+  "model_calls": {
+    "total": 887,
+    "max_per_decision": 1
+  },
+  "tool_calls": {
+    "total": 4652,
+    "max_per_decision": 4
+  },
+  "live_openai": {
+    "planning_attempts": 0,
+    "api_requests": 0,
+    "read_only_tool_calls": 0,
+    "provider_errors": 0,
+    "fallbacks": 0,
+    "layout_repairs": 0,
+    "no_action_decisions": 0,
+    "milliseconds": {
+      "p50": null,
+      "p95": null,
+      "max": null
+    },
+    "conservative_cost_usd": 0
+  },
+  "provider_summary": {
+    "run_accounted_usd": 0,
+    "total_accounted_usd": 0
+  },
+  "note": "Includes measured decision handling and injected dependency waits. Offline provider results are not OpenAI latency measurements. No production-scale throughput claim is made."
+}

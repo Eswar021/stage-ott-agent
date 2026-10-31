@@ -1,0 +1,193 @@
+{
+  "last_event_id": "oua-007459",
+  "last_known_at": "2026-10-12T13:17:00.000Z",
+  "user_id": "U-01103",
+  "active_goal": null,
+  "last_decision_id": "D-7e80759ba1c4d60c3ccf",
+  "active_plan": null,
+  "facts": {
+    "user_id": "U-01103",
+    "dialect": "d1",
+    "language": null,
+    "subscription_status": "active",
+    "signup_at": "2026-09-24T19:50:58.195Z",
+    "signup_age_days": 20.9437708912037,
+    "plan_started_at": "2026-10-01T15:07:09.024Z",
+    "plan_ends_at": "2026-10-31T15:07:09.024Z",
+    "ever_paid": true,
+    "notifications_opt_in": true,
+    "whatsapp_opt_in": true,
+    "provenance": {
+      "dialect": {
+        "value": "d1",
+        "status": "known",
+        "source": "app_settings_feed",
+        "evidence_refs": [
+          "event:oua-007459"
+        ],
+        "known_at": "2026-10-12T13:17:00.000Z",
+        "freshness_s": 277980.0,
+        "conflicts": [
+          {
+            "source": "profile:U-01103@2026-09-29T11:41:36.054Z",
+            "value": "d3"
+          }
+        ],
+        "resolution": "Current fresh app setting determines displayed dialect; no profile/link substitution for invalid settings.",
+        "raw_value": "d1"
+      },
+      "language": {
+        "value": null,
+        "status": "unknown",
+        "source": "app_settings_feed",
+        "evidence_refs": [
+          "event:oua-007459"
+        ],
+        "known_at": "2026-10-12T13:17:00.000Z",
+        "freshness_s": 277980.0,
+        "conflicts": [],
+        "resolution": ""
+      },
+      "signup_at": {
+        "value": "2026-09-24T19:50:58.195Z",
+        "status": "known",
+        "source": "profile_or_signup_event",
+        "evidence_refs": [
+          "profile:U-01103@2026-09-29T11:41:36.054Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": ""
+      },
+      "subscription_status": {
+        "value": "active",
+        "status": "known",
+        "source": "billing_events_reconciled_with_profile",
+        "evidence_refs": [
+          "event:ac87956d-a701-4386-9b3e-02518b9dcd09"
+        ],
+        "known_at": "2026-10-01T15:07:09.024Z",
+        "freshness_s": 1221770.976,
+        "conflicts": [
+          {
+            "source": "profile:U-01103@2026-09-29T11:41:36.054Z",
+            "value": "never"
+          }
+        ],
+        "resolution": "Compare event-time estimate with fact update time; preserve ever-paid evidence and expire dated plans."
+      },
+      "ever_paid": {
+        "value": true,
+        "status": "known",
+        "source": "paid_history_or_profile",
+        "evidence_refs": [
+          "event:ac87956d-a701-4386-9b3e-02518b9dcd09"
+        ],
+        "known_at": "2026-10-01T15:07:09.024Z",
+        "freshness_s": 1221770.976,
+        "conflicts": [],
+        "resolution": "Paid events take precedence. Conflicting profile-only paid/never versions leave lifetime payment unknown."
+      },
+      "notifications_opt_in": {
+        "value": true,
+        "status": "known",
+        "source": "consent_profile_with_optout_override",
+        "evidence_refs": [
+          "profile:U-01103@2026-09-29T11:41:36.054Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Only explicit affirmative consent permits an outbound channel."
+      },
+      "whatsapp_opt_in": {
+        "value": true,
+        "status": "known",
+        "source": "consent_profile_with_optout_override",
+        "evidence_refs": [
+          "profile:U-01103@2026-09-29T11:41:36.054Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Only explicit affirmative consent permits an outbound channel."
+      }
+    },
+    "behavior": {
+      "play_count": 2,
+      "completion_count": 2,
+      "play_days_14d": [
+        "2026-10-09"
+      ],
+      "top_genres": [
+        "Comedy",
+        "Crime",
+        "Thriller"
+      ],
+      "genre_counts": {
+        "Comedy": 2,
+        "Crime": 1,
+        "Thriller": 1
+      },
+      "unfinished_series": [
+        {
+          "content_slug": "hama-chudibha-d1",
+          "last_play_at": "2026-10-09T14:53:42.000Z",
+          "recency_uncertain": false,
+          "next_episode_id": "hama-chudibha-d1-s1e2",
+          "next_episode_number": 2,
+          "remaining_count": 35,
+          "evidence_refs": [
+            "event:oua-007453",
+            "episodes:hama-chudibha-d1"
+          ]
+        },
+        {
+          "content_slug": "salosa-valo-d1",
+          "last_play_at": "2026-10-01T15:07:02.016Z",
+          "recency_uncertain": false,
+          "next_episode_id": "salosa-valo-d1-s1e2",
+          "next_episode_number": 2,
+          "remaining_count": 11,
+          "evidence_refs": [
+            "event:oua-007443",
+            "episodes:salosa-valo-d1"
+          ]
+        }
+      ],
+      "prior_app_open_count_14d": 8,
+      "uncertain_play_count_14d": 0,
+      "uncertain_open_count_14d": 0,
+      "last_play_at": "2026-10-09T14:53:42.000Z",
+      "last_app_open_before_trigger": "2026-10-10T13:25:00.000Z",
+      "play_evidence": [
+        "event:oua-007443",
+        "event:oua-007453"
+      ],
+      "completion_evidence": [
+        "event:oua-007444",
+        "event:oua-007454"
+      ],
+      "recent_open_evidence": [
+        "event:oua-007455",
+        "event:oua-007452",
+        "event:oua-007457"
+      ]
+    },
+    "observation_coverage": {
+      "start": "2026-09-24T19:50:58.195Z",
+      "end": "2026-10-15T18:30:00.000Z",
+      "lifetime_from_signup": true,
+      "covers_prior_14d": true,
+      "assumption": "Supplied historical export covers instrumented app activity within its stated window; offline arrivals can still revise facts."
+    },
+    "trigger_buffered_s": 0.0,
+    "trigger_is_fresh": true
+  },
+  "goal_history": [],
+  "facts_as_of": "2026-10-15T18:30:00.000Z",
+  "observed_outcomes": [],
+  "learning": [],
+  "revision": 21
+}

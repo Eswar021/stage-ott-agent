@@ -1,0 +1,195 @@
+{
+  "last_event_id": "oua-027282",
+  "last_known_at": "2026-10-12T13:43:35.000Z",
+  "user_id": "U-04333",
+  "active_goal": null,
+  "last_decision_id": "D-6bb80fa60b8cb550d395",
+  "active_plan": null,
+  "facts": {
+    "user_id": "U-04333",
+    "dialect": "d5",
+    "language": null,
+    "subscription_status": "active",
+    "signup_at": "2026-05-14T05:23:16.393Z",
+    "signup_age_days": 154.54633804398148,
+    "plan_started_at": "2026-09-26T07:21:22.338Z",
+    "plan_ends_at": "2026-10-26T07:21:22.338Z",
+    "ever_paid": true,
+    "notifications_opt_in": true,
+    "whatsapp_opt_in": false,
+    "provenance": {
+      "dialect": {
+        "value": "d5",
+        "status": "known",
+        "source": "app_settings_feed",
+        "evidence_refs": [
+          "event:oua-027282"
+        ],
+        "known_at": "2026-10-12T13:43:35.000Z",
+        "freshness_s": 276385.0,
+        "conflicts": [
+          {
+            "source": "profile:U-04333@2026-09-29T06:05:33.045Z",
+            "value": "d3"
+          }
+        ],
+        "resolution": "Current fresh app setting determines displayed dialect; no profile/link substitution for invalid settings.",
+        "raw_value": "d5"
+      },
+      "language": {
+        "value": null,
+        "status": "unknown",
+        "source": "app_settings_feed",
+        "evidence_refs": [
+          "event:oua-027282"
+        ],
+        "known_at": "2026-10-12T13:43:35.000Z",
+        "freshness_s": 276385.0,
+        "conflicts": [],
+        "resolution": ""
+      },
+      "signup_at": {
+        "value": "2026-05-14T05:23:16.393Z",
+        "status": "known",
+        "source": "profile_or_signup_event",
+        "evidence_refs": [
+          "profile:U-04333@2026-09-29T06:05:33.045Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": ""
+      },
+      "subscription_status": {
+        "value": "active",
+        "status": "known",
+        "source": "billing_events_reconciled_with_profile",
+        "evidence_refs": [
+          "profile:U-04333@2026-09-29T06:05:33.045Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Compare event-time estimate with fact update time; preserve ever-paid evidence and expire dated plans."
+      },
+      "ever_paid": {
+        "value": true,
+        "status": "known",
+        "source": "paid_history_or_profile",
+        "evidence_refs": [
+          "event:ca3a51ca-5253-4d93-95a7-02b969445f13"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Paid events take precedence. Conflicting profile-only paid/never versions leave lifetime payment unknown."
+      },
+      "notifications_opt_in": {
+        "value": true,
+        "status": "known",
+        "source": "consent_profile_with_optout_override",
+        "evidence_refs": [
+          "profile:U-04333@2026-09-29T06:05:33.045Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Only explicit affirmative consent permits an outbound channel."
+      },
+      "whatsapp_opt_in": {
+        "value": false,
+        "status": "known",
+        "source": "consent_profile_with_optout_override",
+        "evidence_refs": [
+          "profile:U-04333@2026-09-29T06:05:33.045Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Only explicit affirmative consent permits an outbound channel."
+      }
+    },
+    "behavior": {
+      "play_count": 14,
+      "completion_count": 6,
+      "play_days_14d": [
+        "2026-10-04",
+        "2026-10-12"
+      ],
+      "top_genres": [
+        "Comedy",
+        "Romance",
+        "Devotional"
+      ],
+      "genre_counts": {
+        "Comedy": 5,
+        "Romance": 4,
+        "Devotional": 3,
+        "Family": 1,
+        "Thriller": 1
+      },
+      "unfinished_series": [
+        {
+          "content_slug": "gubava-gihaya-d5",
+          "last_play_at": "2026-10-04T17:05:23.000Z",
+          "recency_uncertain": false,
+          "next_episode_id": "gubava-gihaya-d5-s1e3",
+          "next_episode_number": 3,
+          "remaining_count": 27,
+          "evidence_refs": [
+            "event:oua-027272",
+            "episodes:gubava-gihaya-d5"
+          ]
+        },
+        {
+          "content_slug": "pibha-tibalo-d5",
+          "last_play_at": "2026-09-26T03:33:49.898Z",
+          "recency_uncertain": false,
+          "next_episode_id": "pibha-tibalo-d5-s1e2",
+          "next_episode_number": 2,
+          "remaining_count": 59,
+          "evidence_refs": [
+            "event:135c2e19-3406-4342-823c-28e47ac0b26f",
+            "episodes:pibha-tibalo-d5"
+          ]
+        }
+      ],
+      "prior_app_open_count_14d": 8,
+      "uncertain_play_count_14d": 0,
+      "uncertain_open_count_14d": 0,
+      "last_play_at": "2026-10-12T13:43:35.000Z",
+      "last_app_open_before_trigger": "2026-10-12T13:43:00.000Z",
+      "play_evidence": [
+        "event:0a44c7da-62ec-42dc-8622-7b7e8663a94f",
+        "event:f287152c-0125-478c-b21f-c06fd9d81e99",
+        "event:oua-027268",
+        "event:oua-027272",
+        "event:oua-027282"
+      ],
+      "completion_evidence": [
+        "event:e48a8bbd-caf5-4702-bc0d-d2034e23c045",
+        "event:oua-027269",
+        "event:oua-027273"
+      ],
+      "recent_open_evidence": [
+        "event:oua-027277",
+        "event:oua-027279",
+        "event:oua-027281"
+      ]
+    },
+    "observation_coverage": {
+      "start": "2026-08-31T18:30:00.000Z",
+      "end": "2026-10-15T18:30:00.000Z",
+      "lifetime_from_signup": false,
+      "covers_prior_14d": true,
+      "assumption": "Supplied historical export covers instrumented app activity within its stated window; offline arrivals can still revise facts."
+    },
+    "trigger_buffered_s": 0.0,
+    "trigger_is_fresh": true
+  },
+  "goal_history": [],
+  "facts_as_of": "2026-10-15T18:30:00.000Z",
+  "observed_outcomes": [],
+  "learning": [],
+  "revision": 20
+}

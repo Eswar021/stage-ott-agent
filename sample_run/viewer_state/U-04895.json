@@ -1,0 +1,182 @@
+{
+  "last_event_id": "oua-030744",
+  "last_known_at": "2026-10-14T07:04:00.000Z",
+  "user_id": "U-04895",
+  "active_goal": null,
+  "last_decision_id": "D-1ea30ce68887777b27b6",
+  "active_plan": null,
+  "facts": {
+    "user_id": "U-04895",
+    "dialect": "d2",
+    "language": null,
+    "subscription_status": "never",
+    "signup_at": "2025-02-19T07:22:32.351Z",
+    "signup_age_days": 603.4635144560185,
+    "plan_started_at": null,
+    "plan_ends_at": null,
+    "ever_paid": false,
+    "notifications_opt_in": true,
+    "whatsapp_opt_in": true,
+    "provenance": {
+      "dialect": {
+        "value": "d2",
+        "status": "known",
+        "source": "app_settings_feed",
+        "evidence_refs": [
+          "event:oua-030744"
+        ],
+        "known_at": "2026-10-14T07:04:00.000Z",
+        "freshness_s": 127560.0,
+        "conflicts": [],
+        "resolution": "Current fresh app setting determines displayed dialect; no profile/link substitution for invalid settings.",
+        "raw_value": "d2"
+      },
+      "language": {
+        "value": null,
+        "status": "unknown",
+        "source": "app_settings_feed",
+        "evidence_refs": [
+          "event:oua-030744"
+        ],
+        "known_at": "2026-10-14T07:04:00.000Z",
+        "freshness_s": 127560.0,
+        "conflicts": [],
+        "resolution": ""
+      },
+      "signup_at": {
+        "value": "2025-02-19T07:22:32.351Z",
+        "status": "known",
+        "source": "profile_or_signup_event",
+        "evidence_refs": [
+          "profile:U-04895@2026-09-28T20:03:05.043Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": ""
+      },
+      "subscription_status": {
+        "value": "never",
+        "status": "known",
+        "source": "billing_events_reconciled_with_profile",
+        "evidence_refs": [
+          "profile:U-04895@2026-09-28T20:03:05.043Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Compare event-time estimate with fact update time; preserve ever-paid evidence and expire dated plans."
+      },
+      "ever_paid": {
+        "value": false,
+        "status": "known",
+        "source": "paid_history_or_profile",
+        "evidence_refs": [
+          "profile:U-04895@2026-09-28T20:03:05.043Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Paid events take precedence. Conflicting profile-only paid/never versions leave lifetime payment unknown."
+      },
+      "notifications_opt_in": {
+        "value": true,
+        "status": "known",
+        "source": "consent_profile_with_optout_override",
+        "evidence_refs": [
+          "profile:U-04895@2026-09-28T20:03:05.043Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Only explicit affirmative consent permits an outbound channel."
+      },
+      "whatsapp_opt_in": {
+        "value": true,
+        "status": "known",
+        "source": "consent_profile_with_optout_override",
+        "evidence_refs": [
+          "profile:U-04895@2026-09-28T20:03:05.043Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Only explicit affirmative consent permits an outbound channel."
+      }
+    },
+    "behavior": {
+      "play_count": 4,
+      "completion_count": 3,
+      "play_days_14d": [],
+      "top_genres": [
+        "Thriller",
+        "Family"
+      ],
+      "genre_counts": {
+        "Thriller": 3,
+        "Family": 1
+      },
+      "unfinished_series": [
+        {
+          "content_slug": "bhaja-moguba-d2",
+          "last_play_at": "2026-09-23T16:46:57.386Z",
+          "recency_uncertain": false,
+          "next_episode_id": "bhaja-moguba-d2-s1e4",
+          "next_episode_number": 4,
+          "remaining_count": 31,
+          "evidence_refs": [
+            "event:a4a7741b-28b9-4669-a0b8-a771966d01e9",
+            "episodes:bhaja-moguba-d2"
+          ]
+        },
+        {
+          "content_slug": "dhapipa-gini-d2",
+          "last_play_at": "2026-09-23T04:04:39.275Z",
+          "recency_uncertain": false,
+          "next_episode_id": "dhapipa-gini-d2-s1e1",
+          "next_episode_number": 1,
+          "remaining_count": 55,
+          "evidence_refs": [
+            "event:649a9ae5-b0cf-45ee-bee9-5abf0b4912f3",
+            "episodes:dhapipa-gini-d2"
+          ]
+        }
+      ],
+      "prior_app_open_count_14d": 9,
+      "uncertain_play_count_14d": 0,
+      "uncertain_open_count_14d": 0,
+      "last_play_at": "2026-09-23T16:46:57.386Z",
+      "last_app_open_before_trigger": "2026-10-13T16:46:00.000Z",
+      "play_evidence": [
+        "event:9b187940-67ff-48fc-b39d-447e2e33f93c",
+        "event:57e36a10-cb64-4c33-9726-9850aa7b7b42",
+        "event:649a9ae5-b0cf-45ee-bee9-5abf0b4912f3",
+        "event:a4a7741b-28b9-4669-a0b8-a771966d01e9"
+      ],
+      "completion_evidence": [
+        "event:ce5b5687-c3e5-4617-9020-3114acb23b88",
+        "event:77e0307f-9dc8-4add-b90e-080accdd0f86",
+        "event:86f57dd7-2d96-469d-95c4-ebc9f2b8aabf"
+      ],
+      "recent_open_evidence": [
+        "event:oua-030736",
+        "event:oua-030742",
+        "event:oua-030740"
+      ]
+    },
+    "observation_coverage": {
+      "start": "2026-08-31T18:30:00.000Z",
+      "end": "2026-10-15T18:30:00.000Z",
+      "lifetime_from_signup": false,
+      "covers_prior_14d": true,
+      "assumption": "Supplied historical export covers instrumented app activity within its stated window; offline arrivals can still revise facts."
+    },
+    "trigger_buffered_s": 0.0,
+    "trigger_is_fresh": true
+  },
+  "goal_history": [],
+  "facts_as_of": "2026-10-15T18:30:00.000Z",
+  "observed_outcomes": [],
+  "learning": [],
+  "revision": 22
+}

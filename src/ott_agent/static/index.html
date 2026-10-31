@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Inspect evidence, agent decisions and approved OTT experiences.">
+  <title>STAGE · Agent Studio</title>
+  <link rel="stylesheet" href="/assets/style.css"><script src="/assets/app.js" defer></script>
+</head>
+<body>
+<aside class="sidebar">
+  <a class="brand" href="/" aria-label="Agent Studio home"><span class="brandmark">S</span> STAGE<span class="branddot">●</span></a>
+  <div class="workspace-label">AGENT STUDIO <span>LOCAL</span></div>
+  <nav aria-label="Main navigation">
+    <button class="nav active" data-screen="decisions"><span>◈</span> Decisions</button>
+    <button class="nav" data-screen="playground"><span>▷</span> Playground</button>
+    <button class="nav" data-screen="reports"><span>▥</span> Evaluation</button>
+    <button class="nav" data-screen="jobs"><span>≋</span> Background jobs</button>
+  </nav>
+  <div class="sidebar-bottom"><div class="online-dot">Backend connected</div><p>One viewer. One goal.<br>Every decision has a trail.</p><a href="/docs" target="_blank" rel="noopener">Explore the API ↗</a></div>
+</aside>
+<main>
+  <header class="topbar"><div><span class="eyebrow">ONE USER, ONE AGENT</span><h1 id="screen-title">Decision explorer</h1></div><div class="run-picker"><label for="run-select">Review workspace</label><select id="run-select" aria-label="Review workspace"><option>Loading workspaces…</option></select></div></header>
+  <div id="notice" class="notice" role="status" hidden></div>
+  <div id="error" class="error" role="alert" hidden></div>
+  <section id="screen-decisions" class="screen">
+    <div class="intro"><p>Follow the evidence. See what the viewer gets.</p><span class="quiet-badge">Browsing uses no model credits</span></div>
+    <div id="metrics" class="metrics"></div>
+    <div class="explorer">
+      <section class="decision-list panel" aria-label="Decisions">
+        <div class="list-heading"><h2>Decisions <span id="decision-count"></span></h2><button class="icon-button" id="refresh-decisions" aria-label="Refresh decisions">↻</button></div>
+        <label class="search"><span>⌕</span><input id="search" placeholder="Find a viewer, goal or title…" aria-label="Search decisions"></label>
+        <div class="filter-row"><select id="provider-filter" aria-label="Filter by provider"><option value="">All providers</option><option value="openai">OpenAI</option><option value="replay">Offline replay</option><option value="gate">Gate / no call</option></select><select id="status-filter" aria-label="Filter by status"><option value="">All decisions</option><option>PUBLISHED</option><option>NO_ACTION</option></select></div>
+        <div id="decision-items" class="decision-items" aria-live="polite"><div class="empty">Loading saved decisions…</div></div>
+        <div class="pagination"><button id="previous" class="text-button">← Previous</button><span id="page-label"></span><button id="next" class="text-button">Next →</button></div>
+      </section>
+      <article id="decision-detail" class="detail panel"><div class="empty large">Select a decision to explore its story.</div></article>
+    </div>
+  </section>
+  <section id="screen-playground" class="screen" hidden>
+    <div class="intro"><p>Trigger a decision. Watch the agent work.</p><span class="quiet-badge">Offline by default</span></div>
+    <div class="play-grid"><section class="panel form-panel"><div class="section-label">01 / CHOOSE A WORKFLOW</div><h2>A new decision, without the terminal</h2><p class="muted">Source replay preserves the assignment's original timeline. Live events use the server's current time and their own viewer state.</p>
+      <div class="segmented" role="group" aria-label="Event workflow"><button class="selected" data-mode="source">Supplied trigger</button><button data-mode="live">New live event</button></div>
+      <div id="source-form"><label for="trigger-search">Find a supplied viewer</label><input id="trigger-search" placeholder="e.g. U-02344"><label for="trigger-select">Event to replay</label><select id="trigger-select"></select><p class="hint">An isolated snapshot with prior delivered facts, no previous agent commitments, and no future outcome simulation. Holdout viewers still abstain.</p></div>
+      <div id="live-form" hidden><label for="live-viewer">Viewer ID</label><input id="live-viewer" value="U-02344"><label for="live-kind">Event type</label><select id="live-kind"><option>app_open</option><option>login_success</option><option>play_started</option><option>episode_completed</option><option>purchase_completed</option><option>notification_opt_out</option><option>app_dialect_changed</option></select><div class="two-cols"><div><label for="live-dialect">Current app dialect</label><select id="live-dialect"><option>d1</option><option>d2</option><option selected>d3</option><option>d4</option><option>d5</option><option>d6</option></select></div><div><label for="live-language">App language</label><select id="live-language"><option value="hin">Hindi</option><option value="en">English</option></select></div></div><label for="live-properties">Event properties (JSON)</label><textarea id="live-properties" rows="4" spellcheck="false" aria-describedby="live-properties-help">{}</textarea><p id="live-properties-help" class="hint" aria-live="polite">No extra properties are required for an app open. Viewer ID and app settings are sent separately.</p><button id="reset-live-example" class="text-button" type="button">Reset to event example ↻</button><p class="hint">Only the new event is sent. Receipt time is assigned by the server. The gap after the source export stays unknown; a historical snapshot cannot prove current eligibility.</p></div>
+      <label for="demo-provider">Planning provider</label><select id="demo-provider"><option value="replay">Offline replay · no API cost</option><option value="openai">OpenAI · uses your local credit budget</option></select><p id="provider-help" class="hint">Same verification and publication checks, with the deterministic offline planner.</p><button id="run-decision" class="primary full">Run offline decision <span>↗</span></button>
+    </section><section class="panel form-panel"><div class="section-label">02 / FOLLOW THE RESULT</div><h2>Job activity</h2><div id="play-activity" class="empty large">Your next decision will appear here.<small>Submitting returns a job ID immediately.<br>The backend plans and verifies in the background.</small></div><div class="workflow-note"><strong>What happens after publication?</strong><p>Playback and purchase events update viewer memory and goal progress. Goal achievement is separate from publishing a page. New live events do not run the outcome simulator.</p></div></section></div>
+  </section>
+  <section id="screen-reports" class="screen" hidden>
+    <div class="intro"><p>Observed results, with their limits in view.</p><button id="refresh-reports" class="secondary">Refresh reports</button></div>
+    <div id="report-content"></div>
+    <section class="panel replay-panel"><div><div class="section-label">REPRODUCIBLE EVALUATION</div><h2>Run the whole assignment stream</h2><p class="muted">One request processes all supplied triggers, runs the unchanged outcome simulator and generates reports. It runs in the background.</p></div><div class="replay-controls"><label for="replay-provider">Evaluation provider</label><select id="replay-provider"><option value="replay">Offline · no API cost</option><option value="openai">Hybrid · up to 12 OpenAI planning attempts</option></select><button id="start-replay" class="primary">Start background replay ↗</button></div></section>
+  </section>
+  <section id="screen-jobs" class="screen" hidden><div class="intro"><p>Durable work, visible progress.</p><button id="refresh-jobs" class="secondary">Refresh jobs</button></div><div id="job-list" class="job-list"></div></section>
+  <footer>STAGE AGENT STUDIO <span>Evidence → proposal → independent checks → approved action → observed outcome</span></footer>
+</main>
+</body></html>

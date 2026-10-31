@@ -1,0 +1,193 @@
+{
+  "last_event_id": "oua-029000",
+  "last_known_at": "2026-10-15T04:08:37.000Z",
+  "user_id": "U-04637",
+  "active_goal": null,
+  "last_decision_id": "D-0d53a4093101f1464332",
+  "active_plan": null,
+  "facts": {
+    "user_id": "U-04637",
+    "dialect": "d3",
+    "language": null,
+    "subscription_status": "never",
+    "signup_at": "2026-01-05T05:09:00.056Z",
+    "signup_age_days": 283.5562493518518,
+    "plan_started_at": null,
+    "plan_ends_at": null,
+    "ever_paid": false,
+    "notifications_opt_in": true,
+    "whatsapp_opt_in": false,
+    "provenance": {
+      "dialect": {
+        "value": "d3",
+        "status": "known",
+        "source": "app_settings_feed",
+        "evidence_refs": [
+          "event:oua-029000"
+        ],
+        "known_at": "2026-10-15T04:08:37.000Z",
+        "freshness_s": 51683.0,
+        "conflicts": [],
+        "resolution": "Current fresh app setting determines displayed dialect; no profile/link substitution for invalid settings.",
+        "raw_value": "d3"
+      },
+      "language": {
+        "value": null,
+        "status": "unknown",
+        "source": "app_settings_feed",
+        "evidence_refs": [
+          "event:oua-029000"
+        ],
+        "known_at": "2026-10-15T04:08:37.000Z",
+        "freshness_s": 51683.0,
+        "conflicts": [],
+        "resolution": ""
+      },
+      "signup_at": {
+        "value": "2026-01-05T05:09:00.056Z",
+        "status": "known",
+        "source": "profile_or_signup_event",
+        "evidence_refs": [
+          "profile:U-04637@2026-09-28T21:45:45.057Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": ""
+      },
+      "subscription_status": {
+        "value": "never",
+        "status": "known",
+        "source": "billing_events_reconciled_with_profile",
+        "evidence_refs": [
+          "profile:U-04637@2026-09-28T21:45:45.057Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Compare event-time estimate with fact update time; preserve ever-paid evidence and expire dated plans."
+      },
+      "ever_paid": {
+        "value": false,
+        "status": "known",
+        "source": "paid_history_or_profile",
+        "evidence_refs": [
+          "profile:U-04637@2026-09-28T21:45:45.057Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Paid events take precedence. Conflicting profile-only paid/never versions leave lifetime payment unknown."
+      },
+      "notifications_opt_in": {
+        "value": true,
+        "status": "known",
+        "source": "consent_profile_with_optout_override",
+        "evidence_refs": [
+          "profile:U-04637@2026-09-28T21:45:45.057Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Only explicit affirmative consent permits an outbound channel."
+      },
+      "whatsapp_opt_in": {
+        "value": false,
+        "status": "known",
+        "source": "consent_profile_with_optout_override",
+        "evidence_refs": [
+          "profile:U-04637@2026-09-28T21:45:45.057Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Only explicit affirmative consent permits an outbound channel."
+      }
+    },
+    "behavior": {
+      "play_count": 9,
+      "completion_count": 7,
+      "play_days_14d": [
+        "2026-10-03",
+        "2026-10-09",
+        "2026-10-14",
+        "2026-10-15"
+      ],
+      "top_genres": [
+        "Drama",
+        "Comedy",
+        "Thriller"
+      ],
+      "genre_counts": {
+        "Drama": 4,
+        "Comedy": 4,
+        "Thriller": 2,
+        "Crime": 2,
+        "Action": 2,
+        "Romance": 1
+      },
+      "unfinished_series": [
+        {
+          "content_slug": "digi-mone-d3",
+          "last_play_at": "2026-10-03T16:05:40.000Z",
+          "recency_uncertain": false,
+          "next_episode_id": "digi-mone-d3-s1e1",
+          "next_episode_number": 1,
+          "remaining_count": 32,
+          "evidence_refs": [
+            "event:oua-028986",
+            "episodes:digi-mone-d3"
+          ]
+        },
+        {
+          "content_slug": "yane-tegi-d3",
+          "last_play_at": "2026-09-21T16:21:01.263Z",
+          "recency_uncertain": false,
+          "next_episode_id": "yane-tegi-d3-s1e3",
+          "next_episode_number": 3,
+          "remaining_count": 18,
+          "evidence_refs": [
+            "event:32b73580-e098-4c50-9a37-b3224e7d9096",
+            "episodes:yane-tegi-d3"
+          ]
+        }
+      ],
+      "prior_app_open_count_14d": 5,
+      "uncertain_play_count_14d": 0,
+      "uncertain_open_count_14d": 0,
+      "last_play_at": "2026-10-15T03:39:37.000Z",
+      "last_app_open_before_trigger": "2026-10-15T03:36:00.000Z",
+      "play_evidence": [
+        "event:30e464e0-b40d-4bc6-9fd5-d6717f7751b2",
+        "event:oua-028986",
+        "event:oua-028991",
+        "event:oua-028995",
+        "event:oua-028999"
+      ],
+      "completion_evidence": [
+        "event:oua-028992",
+        "event:oua-028996",
+        "event:oua-029000"
+      ],
+      "recent_open_evidence": [
+        "event:oua-028989",
+        "event:oua-028993",
+        "event:oua-028997"
+      ]
+    },
+    "observation_coverage": {
+      "start": "2026-08-31T18:30:00.000Z",
+      "end": "2026-10-15T18:30:00.000Z",
+      "lifetime_from_signup": false,
+      "covers_prior_14d": true,
+      "assumption": "Supplied historical export covers instrumented app activity within its stated window; offline arrivals can still revise facts."
+    },
+    "trigger_buffered_s": 0.0,
+    "trigger_is_fresh": true
+  },
+  "goal_history": [],
+  "facts_as_of": "2026-10-15T18:30:00.000Z",
+  "observed_outcomes": [],
+  "learning": [],
+  "revision": 20
+}

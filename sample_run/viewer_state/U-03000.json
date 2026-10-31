@@ -1,0 +1,130 @@
+{
+  "last_event_id": "oua-018687",
+  "last_known_at": "2026-10-01T15:22:22.466Z",
+  "user_id": "U-03000",
+  "active_goal": null,
+  "last_decision_id": "D-0fff5d748cd4e584a99b",
+  "active_plan": null,
+  "facts": {
+    "user_id": "U-03000",
+    "dialect": "d4",
+    "language": "hin",
+    "subscription_status": "unknown",
+    "signup_at": "2026-10-01T15:21:52.951Z",
+    "signup_age_days": 14.130637141203705,
+    "plan_started_at": null,
+    "plan_ends_at": null,
+    "ever_paid": null,
+    "notifications_opt_in": false,
+    "whatsapp_opt_in": false,
+    "provenance": {
+      "dialect": {
+        "value": "d4",
+        "status": "known",
+        "source": "app_settings_feed",
+        "evidence_refs": [
+          "event:68413791-b145-4bfb-8e87-361d5d5e7142"
+        ],
+        "known_at": "2026-10-01T15:22:23.814Z",
+        "freshness_s": 1220856.186,
+        "conflicts": [],
+        "resolution": "Current fresh app setting determines displayed dialect; no profile/link substitution for invalid settings.",
+        "raw_value": "d4"
+      },
+      "language": {
+        "value": "hin",
+        "status": "known",
+        "source": "app_settings_feed",
+        "evidence_refs": [
+          "event:68413791-b145-4bfb-8e87-361d5d5e7142"
+        ],
+        "known_at": "2026-10-01T15:22:23.814Z",
+        "freshness_s": 1220856.186,
+        "conflicts": [],
+        "resolution": ""
+      },
+      "signup_at": {
+        "value": "2026-10-01T15:21:52.951Z",
+        "status": "known",
+        "source": "profile_or_signup_event",
+        "evidence_refs": [
+          "event:6fa05e22-fb3f-431c-a62c-62e418b369ba"
+        ],
+        "known_at": "2026-10-01T15:21:52.951Z",
+        "freshness_s": 1220887.049,
+        "conflicts": [],
+        "resolution": ""
+      },
+      "subscription_status": {
+        "value": "unknown",
+        "status": "unknown",
+        "source": "billing_events_reconciled_with_profile",
+        "evidence_refs": [],
+        "known_at": null,
+        "freshness_s": null,
+        "conflicts": [],
+        "resolution": "Compare event-time estimate with fact update time; preserve ever-paid evidence and expire dated plans."
+      },
+      "ever_paid": {
+        "value": null,
+        "status": "unknown",
+        "source": "paid_history_or_profile",
+        "evidence_refs": [],
+        "known_at": null,
+        "freshness_s": null,
+        "conflicts": [],
+        "resolution": "Paid events take precedence. Conflicting profile-only paid/never versions leave lifetime payment unknown."
+      },
+      "notifications_opt_in": {
+        "value": false,
+        "status": "unknown",
+        "source": "consent_profile_with_optout_override",
+        "evidence_refs": [],
+        "known_at": null,
+        "freshness_s": null,
+        "conflicts": [],
+        "resolution": "Only explicit affirmative consent permits an outbound channel."
+      },
+      "whatsapp_opt_in": {
+        "value": false,
+        "status": "unknown",
+        "source": "consent_profile_with_optout_override",
+        "evidence_refs": [],
+        "known_at": null,
+        "freshness_s": null,
+        "conflicts": [],
+        "resolution": "Only explicit affirmative consent permits an outbound channel."
+      }
+    },
+    "behavior": {
+      "play_count": 0,
+      "completion_count": 0,
+      "play_days_14d": [],
+      "top_genres": [],
+      "genre_counts": {},
+      "unfinished_series": [],
+      "prior_app_open_count_14d": 0,
+      "uncertain_play_count_14d": 0,
+      "uncertain_open_count_14d": 0,
+      "last_play_at": null,
+      "last_app_open_before_trigger": "2026-10-01T15:22:22.466Z",
+      "play_evidence": [],
+      "completion_evidence": [],
+      "recent_open_evidence": []
+    },
+    "observation_coverage": {
+      "start": "2026-10-01T15:21:52.951Z",
+      "end": "2026-10-15T18:30:00.000Z",
+      "lifetime_from_signup": true,
+      "covers_prior_14d": true,
+      "assumption": "Supplied historical export covers instrumented app activity within its stated window; offline arrivals can still revise facts."
+    },
+    "trigger_buffered_s": 0.0,
+    "trigger_is_fresh": true
+  },
+  "goal_history": [],
+  "facts_as_of": "2026-10-15T18:30:00.000Z",
+  "observed_outcomes": [],
+  "learning": [],
+  "revision": 4
+}

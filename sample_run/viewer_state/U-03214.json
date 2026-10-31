@@ -1,0 +1,170 @@
+{
+  "last_event_id": "oua-020249",
+  "last_known_at": "2026-10-14T16:08:00.000Z",
+  "user_id": "U-03214",
+  "active_goal": null,
+  "last_decision_id": "D-6e175e2c1fd324ec5c73",
+  "active_plan": null,
+  "facts": {
+    "user_id": "U-03214",
+    "dialect": "d3",
+    "language": null,
+    "subscription_status": "never",
+    "signup_at": "2025-12-20T19:11:13.542Z",
+    "signup_age_days": 298.97137104166666,
+    "plan_started_at": null,
+    "plan_ends_at": null,
+    "ever_paid": false,
+    "notifications_opt_in": true,
+    "whatsapp_opt_in": false,
+    "provenance": {
+      "dialect": {
+        "value": "d3",
+        "status": "known",
+        "source": "app_settings_feed",
+        "evidence_refs": [
+          "event:oua-020249"
+        ],
+        "known_at": "2026-10-14T16:08:00.000Z",
+        "freshness_s": 94920.0,
+        "conflicts": [],
+        "resolution": "Current fresh app setting determines displayed dialect; no profile/link substitution for invalid settings.",
+        "raw_value": "d3"
+      },
+      "language": {
+        "value": null,
+        "status": "unknown",
+        "source": "app_settings_feed",
+        "evidence_refs": [
+          "event:oua-020249"
+        ],
+        "known_at": "2026-10-14T16:08:00.000Z",
+        "freshness_s": 94920.0,
+        "conflicts": [],
+        "resolution": ""
+      },
+      "signup_at": {
+        "value": "2025-12-20T19:11:13.542Z",
+        "status": "known",
+        "source": "profile_or_signup_event",
+        "evidence_refs": [
+          "profile:U-03214@2026-09-29T01:59:24.587Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": ""
+      },
+      "subscription_status": {
+        "value": "never",
+        "status": "known",
+        "source": "billing_events_reconciled_with_profile",
+        "evidence_refs": [
+          "profile:U-03214@2026-09-29T01:59:24.587Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Compare event-time estimate with fact update time; preserve ever-paid evidence and expire dated plans."
+      },
+      "ever_paid": {
+        "value": false,
+        "status": "known",
+        "source": "paid_history_or_profile",
+        "evidence_refs": [
+          "profile:U-03214@2026-09-29T01:59:24.587Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Paid events take precedence. Conflicting profile-only paid/never versions leave lifetime payment unknown."
+      },
+      "notifications_opt_in": {
+        "value": true,
+        "status": "known",
+        "source": "consent_profile_with_optout_override",
+        "evidence_refs": [
+          "profile:U-03214@2026-09-29T01:59:24.587Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Only explicit affirmative consent permits an outbound channel."
+      },
+      "whatsapp_opt_in": {
+        "value": false,
+        "status": "known",
+        "source": "consent_profile_with_optout_override",
+        "evidence_refs": [
+          "profile:U-03214@2026-09-29T01:59:24.587Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Only explicit affirmative consent permits an outbound channel."
+      }
+    },
+    "behavior": {
+      "play_count": 4,
+      "completion_count": 0,
+      "play_days_14d": [
+        "2026-10-07"
+      ],
+      "top_genres": [
+        "Thriller",
+        "Crime",
+        "Action"
+      ],
+      "genre_counts": {
+        "Thriller": 3,
+        "Crime": 3,
+        "Action": 1
+      },
+      "unfinished_series": [
+        {
+          "content_slug": "yane-tegi-d3",
+          "last_play_at": "2026-09-10T10:43:20.872Z",
+          "recency_uncertain": false,
+          "next_episode_id": "yane-tegi-d3-s1e1",
+          "next_episode_number": 1,
+          "remaining_count": 20,
+          "evidence_refs": [
+            "event:b0858480-2cac-4f0f-8c78-0d22b2cbdbb6",
+            "episodes:yane-tegi-d3"
+          ]
+        }
+      ],
+      "prior_app_open_count_14d": 3,
+      "uncertain_play_count_14d": 0,
+      "uncertain_open_count_14d": 0,
+      "last_play_at": "2026-10-07T07:08:21.000Z",
+      "last_app_open_before_trigger": "2026-10-14T15:32:00.000Z",
+      "play_evidence": [
+        "event:494b47d9-0cae-4481-bfc5-9a82e11701a1",
+        "event:e5a41087-c624-4c15-b65e-f363b5a42c01",
+        "event:b0858480-2cac-4f0f-8c78-0d22b2cbdbb6",
+        "event:oua-020248"
+      ],
+      "completion_evidence": [],
+      "recent_open_evidence": [
+        "event:oua-020246",
+        "event:oua-020244",
+        "event:oua-020250"
+      ]
+    },
+    "observation_coverage": {
+      "start": "2026-08-31T18:30:00.000Z",
+      "end": "2026-10-15T18:30:00.000Z",
+      "lifetime_from_signup": false,
+      "covers_prior_14d": true,
+      "assumption": "Supplied historical export covers instrumented app activity within its stated window; offline arrivals can still revise facts."
+    },
+    "trigger_buffered_s": 0.0,
+    "trigger_is_fresh": true
+  },
+  "goal_history": [],
+  "facts_as_of": "2026-10-15T18:30:00.000Z",
+  "observed_outcomes": [],
+  "learning": [],
+  "revision": 14
+}

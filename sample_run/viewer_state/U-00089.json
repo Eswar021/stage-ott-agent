@@ -1,0 +1,321 @@
+{
+  "last_event_id": "oua-000618",
+  "last_known_at": "2026-10-12T17:52:12.000Z",
+  "user_id": "U-00089",
+  "active_goal": null,
+  "last_decision_id": "D-bd54aa6238e42993fc1a",
+  "active_plan": null,
+  "facts": {
+    "user_id": "U-00089",
+    "dialect": "d3",
+    "language": null,
+    "subscription_status": "active",
+    "signup_at": "2026-06-16T13:38:38.681Z",
+    "signup_age_days": 121.20233008101852,
+    "plan_started_at": null,
+    "plan_ends_at": "2026-10-15T23:58:02.189Z",
+    "ever_paid": true,
+    "notifications_opt_in": false,
+    "whatsapp_opt_in": false,
+    "provenance": {
+      "dialect": {
+        "value": "d3",
+        "status": "known",
+        "source": "app_settings_feed",
+        "evidence_refs": [
+          "event:oua-000618"
+        ],
+        "known_at": "2026-10-12T17:52:12.000Z",
+        "freshness_s": 261468.0,
+        "conflicts": [],
+        "resolution": "Current fresh app setting determines displayed dialect; no profile/link substitution for invalid settings.",
+        "raw_value": "d3"
+      },
+      "language": {
+        "value": null,
+        "status": "unknown",
+        "source": "app_settings_feed",
+        "evidence_refs": [
+          "event:oua-000618"
+        ],
+        "known_at": "2026-10-12T17:52:12.000Z",
+        "freshness_s": 261468.0,
+        "conflicts": [],
+        "resolution": ""
+      },
+      "signup_at": {
+        "value": "2026-06-16T13:38:38.681Z",
+        "status": "known",
+        "source": "profile_or_signup_event",
+        "evidence_refs": [
+          "profile:U-00089@2026-09-29T13:14:59.573Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": ""
+      },
+      "subscription_status": {
+        "value": "active",
+        "status": "known",
+        "source": "billing_events_reconciled_with_profile",
+        "evidence_refs": [
+          "profile:U-00089@2026-09-29T13:14:59.573Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Compare event-time estimate with fact update time; preserve ever-paid evidence and expire dated plans."
+      },
+      "ever_paid": {
+        "value": true,
+        "status": "known",
+        "source": "paid_history_or_profile",
+        "evidence_refs": [
+          "event:96e2d9ab-65bf-4af0-a300-eb8f2f15449a"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Paid events take precedence. Conflicting profile-only paid/never versions leave lifetime payment unknown."
+      },
+      "notifications_opt_in": {
+        "value": false,
+        "status": "known",
+        "source": "consent_profile_with_optout_override",
+        "evidence_refs": [
+          "profile:U-00089@2026-09-29T13:14:59.573Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Only explicit affirmative consent permits an outbound channel."
+      },
+      "whatsapp_opt_in": {
+        "value": false,
+        "status": "known",
+        "source": "consent_profile_with_optout_override",
+        "evidence_refs": [
+          "profile:U-00089@2026-09-29T13:14:59.573Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Only explicit affirmative consent permits an outbound channel."
+      }
+    },
+    "behavior": {
+      "play_count": 18,
+      "completion_count": 12,
+      "play_days_14d": [
+        "2026-10-06",
+        "2026-10-07",
+        "2026-10-09",
+        "2026-10-10",
+        "2026-10-11",
+        "2026-10-12"
+      ],
+      "top_genres": [
+        "Thriller",
+        "Crime",
+        "Romance"
+      ],
+      "genre_counts": {
+        "Thriller": 8,
+        "Crime": 5,
+        "Romance": 3,
+        "Action": 3,
+        "Comedy": 3,
+        "Devotional": 2,
+        "Drama": 2,
+        "Family": 1
+      },
+      "unfinished_series": [
+        {
+          "content_slug": "haja-d3",
+          "last_play_at": "2026-10-12T17:28:12.000Z",
+          "recency_uncertain": false,
+          "next_episode_id": "haja-d3-s1e2",
+          "next_episode_number": 2,
+          "remaining_count": 48,
+          "evidence_refs": [
+            "event:oua-000617",
+            "episodes:haja-d3"
+          ]
+        },
+        {
+          "content_slug": "lomobha-moni-d3",
+          "last_play_at": "2026-10-10T15:35:35.000Z",
+          "recency_uncertain": false,
+          "next_episode_id": "lomobha-moni-d3-s1e2",
+          "next_episode_number": 2,
+          "remaining_count": 34,
+          "evidence_refs": [
+            "event:oua-000603",
+            "episodes:lomobha-moni-d3"
+          ]
+        },
+        {
+          "content_slug": "yadha-kopa-d3",
+          "last_play_at": "2026-10-10T03:58:54.000Z",
+          "recency_uncertain": false,
+          "next_episode_id": "yadha-kopa-d3-s1e2",
+          "next_episode_number": 2,
+          "remaining_count": 6,
+          "evidence_refs": [
+            "event:oua-000599",
+            "episodes:yadha-kopa-d3"
+          ]
+        },
+        {
+          "content_slug": "ririgi-d3",
+          "last_play_at": "2026-10-09T14:14:07.000Z",
+          "recency_uncertain": false,
+          "next_episode_id": "ririgi-d3-s1e2",
+          "next_episode_number": 2,
+          "remaining_count": 8,
+          "evidence_refs": [
+            "event:oua-000595",
+            "episodes:ririgi-d3"
+          ]
+        },
+        {
+          "content_slug": "yane-tegi-d3",
+          "last_play_at": "2026-09-19T16:43:22.727Z",
+          "recency_uncertain": false,
+          "next_episode_id": "yane-tegi-d3-s1e4",
+          "next_episode_number": 4,
+          "remaining_count": 17,
+          "evidence_refs": [
+            "event:90af9e3d-2fa0-4202-9c89-90a71b3bba45",
+            "episodes:yane-tegi-d3"
+          ]
+        },
+        {
+          "content_slug": "yatite-roloda-d3",
+          "last_play_at": "2026-09-12T14:08:27.144Z",
+          "recency_uncertain": false,
+          "next_episode_id": "yatite-roloda-d3-s1e3",
+          "next_episode_number": 3,
+          "remaining_count": 21,
+          "evidence_refs": [
+            "event:6f433986-9138-4878-bf6e-e7167d97dc69",
+            "episodes:yatite-roloda-d3"
+          ]
+        }
+      ],
+      "prior_app_open_count_14d": 11,
+      "uncertain_play_count_14d": 0,
+      "uncertain_open_count_14d": 0,
+      "last_play_at": "2026-10-12T17:28:12.000Z",
+      "last_app_open_before_trigger": "2026-10-12T17:27:00.000Z",
+      "play_evidence": [
+        "event:oua-000599",
+        "event:oua-000603",
+        "event:oua-000609",
+        "event:oua-000613",
+        "event:oua-000617"
+      ],
+      "completion_evidence": [
+        "event:oua-000610",
+        "event:oua-000614",
+        "event:oua-000618"
+      ],
+      "recent_open_evidence": [
+        "event:oua-000605",
+        "event:oua-000611",
+        "event:oua-000615"
+      ]
+    },
+    "observation_coverage": {
+      "start": "2026-08-31T18:30:00.000Z",
+      "end": "2026-10-15T18:30:00.000Z",
+      "lifetime_from_signup": false,
+      "covers_prior_14d": true,
+      "assumption": "Supplied historical export covers instrumented app activity within its stated window; offline arrivals can still revise facts."
+    },
+    "trigger_buffered_s": 0.0,
+    "trigger_is_fresh": true
+  },
+  "goal_history": [
+    {
+      "goal_instance_id": "G-1bb8ffb4726e2ee3b290",
+      "id": "G07",
+      "goal_id": "G07",
+      "user_id": "U-00089",
+      "started_at": "2026-10-01T16:48:42.235Z",
+      "deadline": "2026-10-04T16:48:42.235Z",
+      "success": {
+        "event": "play_started",
+        "condition": "same content_slug as the unfinished series",
+        "window_hours": 72
+      },
+      "version": "G07@2026-09-30",
+      "target_slug": "yane-tegi-d3",
+      "status": "failed",
+      "evidence": [
+        "event:90af9e3d-2fa0-4202-9c89-90a71b3bba45",
+        "episodes:yane-tegi-d3",
+        "goal_rule:G07"
+      ],
+      "action_ids": [
+        "A-e453cfaf52b3ef885a91"
+      ],
+      "rule_history": [],
+      "plan": {
+        "intended_behavior_change": "resume_series_3d",
+        "review_on": [
+          "goal_success_signal",
+          "subscription_change",
+          "dialect_change",
+          "goal_deadline",
+          "goal_rule_correction"
+        ]
+      },
+      "reason_summary": "Choose a measurable lifecycle step from code-proven eligibility, with proportionate home-page assistance.",
+      "judgment": {
+        "goal_instance_id": "G-1bb8ffb4726e2ee3b290",
+        "goal_id": "G07",
+        "user_id": "U-00089",
+        "rule_version": "G07@2026-09-30",
+        "started_at": "2026-10-01T16:48:42.235Z",
+        "deadline": "2026-10-04T16:48:42.235Z",
+        "judged_at": "2026-10-15T18:30:00.000Z",
+        "status": "failed",
+        "evidence": [],
+        "evidence_event_ids": [],
+        "success_at": null,
+        "coverage_complete": true,
+        "rule_history": [],
+        "reason": "The complete observed goal window ended without its required signal.",
+        "attribution": {
+          "classification": "no_success_observed",
+          "linked_success_event_ids": [],
+          "observed_exposure_event_ids": [
+            "oua-000581"
+          ],
+          "confirmed_delivery_event_ids": [],
+          "causal_claim": false,
+          "note": "Temporal/session linkage is descriptive; causal impact is estimated by randomized assignment."
+        }
+      }
+    }
+  ],
+  "facts_as_of": "2026-10-15T18:30:00.000Z",
+  "observed_outcomes": [
+    {
+      "goal_instance_id": "G-1bb8ffb4726e2ee3b290",
+      "status": "failed",
+      "evidence": []
+    }
+  ],
+  "learning": [
+    {
+      "goal_instance_id": "G-1bb8ffb4726e2ee3b290",
+      "observed_status": "failed",
+      "evidence": [],
+      "note": "Observed result, not an individual causal effect."
+    }
+  ],
+  "revision": 40
+}

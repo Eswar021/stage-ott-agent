@@ -1,0 +1,228 @@
+{
+  "last_event_id": "oua-024738",
+  "last_known_at": "2026-10-15T15:12:12.000Z",
+  "user_id": "U-03884",
+  "active_goal": null,
+  "last_decision_id": "D-8efb81f940df7b198648",
+  "active_plan": null,
+  "facts": {
+    "user_id": "U-03884",
+    "dialect": "d1",
+    "language": null,
+    "subscription_status": "never",
+    "signup_at": "2026-09-04T00:36:32.949Z",
+    "signup_age_days": 41.74545197916667,
+    "plan_started_at": null,
+    "plan_ends_at": null,
+    "ever_paid": false,
+    "notifications_opt_in": true,
+    "whatsapp_opt_in": true,
+    "provenance": {
+      "dialect": {
+        "value": "d1",
+        "status": "known",
+        "source": "app_settings_feed",
+        "evidence_refs": [
+          "event:oua-024738"
+        ],
+        "known_at": "2026-10-15T15:12:12.000Z",
+        "freshness_s": 11868.0,
+        "conflicts": [],
+        "resolution": "Current fresh app setting determines displayed dialect; no profile/link substitution for invalid settings.",
+        "raw_value": "d1"
+      },
+      "language": {
+        "value": null,
+        "status": "unknown",
+        "source": "app_settings_feed",
+        "evidence_refs": [
+          "event:oua-024738"
+        ],
+        "known_at": "2026-10-15T15:12:12.000Z",
+        "freshness_s": 11868.0,
+        "conflicts": [],
+        "resolution": ""
+      },
+      "signup_at": {
+        "value": "2026-09-04T00:36:32.949Z",
+        "status": "known",
+        "source": "profile_or_signup_event",
+        "evidence_refs": [
+          "profile:U-03884@2026-09-28T18:46:17.713Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": ""
+      },
+      "subscription_status": {
+        "value": "never",
+        "status": "known",
+        "source": "billing_events_reconciled_with_profile",
+        "evidence_refs": [
+          "profile:U-03884@2026-09-28T18:46:17.713Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Compare event-time estimate with fact update time; preserve ever-paid evidence and expire dated plans."
+      },
+      "ever_paid": {
+        "value": false,
+        "status": "known",
+        "source": "paid_history_or_profile",
+        "evidence_refs": [
+          "profile:U-03884@2026-09-28T18:46:17.713Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Paid events take precedence. Conflicting profile-only paid/never versions leave lifetime payment unknown."
+      },
+      "notifications_opt_in": {
+        "value": true,
+        "status": "known",
+        "source": "consent_profile_with_optout_override",
+        "evidence_refs": [
+          "profile:U-03884@2026-09-28T18:46:17.713Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Only explicit affirmative consent permits an outbound channel."
+      },
+      "whatsapp_opt_in": {
+        "value": true,
+        "status": "known",
+        "source": "consent_profile_with_optout_override",
+        "evidence_refs": [
+          "profile:U-03884@2026-09-28T18:46:17.713Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Only explicit affirmative consent permits an outbound channel."
+      }
+    },
+    "behavior": {
+      "play_count": 11,
+      "completion_count": 9,
+      "play_days_14d": [
+        "2026-10-04",
+        "2026-10-07"
+      ],
+      "top_genres": [
+        "Action",
+        "Family",
+        "Romance"
+      ],
+      "genre_counts": {
+        "Action": 9,
+        "Family": 4,
+        "Romance": 3,
+        "Drama": 2,
+        "Devotional": 1,
+        "Thriller": 1,
+        "Crime": 1
+      },
+      "unfinished_series": [
+        {
+          "content_slug": "hapibha-d1",
+          "last_play_at": "2026-10-07T07:40:57.000Z",
+          "recency_uncertain": false,
+          "next_episode_id": "hapibha-d1-s1e2",
+          "next_episode_number": 2,
+          "remaining_count": 22,
+          "evidence_refs": [
+            "event:oua-024733",
+            "episodes:hapibha-d1"
+          ]
+        },
+        {
+          "content_slug": "patena-d1",
+          "last_play_at": "2026-10-04T15:25:33.000Z",
+          "recency_uncertain": false,
+          "next_episode_id": "patena-d1-s1e2",
+          "next_episode_number": 2,
+          "remaining_count": 19,
+          "evidence_refs": [
+            "event:oua-024727",
+            "episodes:patena-d1"
+          ]
+        },
+        {
+          "content_slug": "tidha-dakachu-d1",
+          "last_play_at": "2026-09-23T07:02:13.785Z",
+          "recency_uncertain": false,
+          "next_episode_id": "tidha-dakachu-d1-s1e3",
+          "next_episode_number": 3,
+          "remaining_count": 15,
+          "evidence_refs": [
+            "event:54bdbc61-42e8-4488-8c30-46b0372545a7",
+            "episodes:tidha-dakachu-d1"
+          ]
+        },
+        {
+          "content_slug": "tiya-bhamaro-d1",
+          "last_play_at": "2026-09-18T18:21:22.875Z",
+          "recency_uncertain": false,
+          "next_episode_id": "tiya-bhamaro-d1-s1e2",
+          "next_episode_number": 2,
+          "remaining_count": 37,
+          "evidence_refs": [
+            "event:b4f79860-af07-4df9-ae2d-1a1dc0ee1deb",
+            "episodes:tiya-bhamaro-d1"
+          ]
+        },
+        {
+          "content_slug": "haba-d1",
+          "last_play_at": "2026-09-17T08:50:36.203Z",
+          "recency_uncertain": false,
+          "next_episode_id": "haba-d1-s1e4",
+          "next_episode_number": 4,
+          "remaining_count": 13,
+          "evidence_refs": [
+            "event:1edc8428-36f7-4af3-b774-abc26b8b09ce",
+            "episodes:haba-d1"
+          ]
+        }
+      ],
+      "prior_app_open_count_14d": 5,
+      "uncertain_play_count_14d": 0,
+      "uncertain_open_count_14d": 0,
+      "last_play_at": "2026-10-07T07:40:57.000Z",
+      "last_app_open_before_trigger": "2026-10-15T15:12:00.000Z",
+      "play_evidence": [
+        "event:a452f03b-4357-4787-a87d-0de783c69dc1",
+        "event:54bdbc61-42e8-4488-8c30-46b0372545a7",
+        "event:86f9e5fb-aaeb-45f2-b094-b51d5a96ff19",
+        "event:oua-024727",
+        "event:oua-024733"
+      ],
+      "completion_evidence": [
+        "event:75e86eac-b49c-4339-a361-d4dc071c8df7",
+        "event:oua-024728",
+        "event:oua-024734"
+      ],
+      "recent_open_evidence": [
+        "event:oua-024731",
+        "event:oua-024735",
+        "event:oua-024737"
+      ]
+    },
+    "observation_coverage": {
+      "start": "2026-09-04T00:36:32.949Z",
+      "end": "2026-10-15T18:30:00.000Z",
+      "lifetime_from_signup": true,
+      "covers_prior_14d": true,
+      "assumption": "Supplied historical export covers instrumented app activity within its stated window; offline arrivals can still revise facts."
+    },
+    "trigger_buffered_s": 0.0,
+    "trigger_is_fresh": true
+  },
+  "goal_history": [],
+  "facts_as_of": "2026-10-15T18:30:00.000Z",
+  "observed_outcomes": [],
+  "learning": [],
+  "revision": 23
+}

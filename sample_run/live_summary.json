@@ -1,0 +1,51 @@
+{
+  "mode": "Actual OpenAI on bounded planning sample; remaining stream uses explicit deterministic fallback/gates",
+  "model": "gpt-6-luna",
+  "live_openai": {
+    "planning_attempts": 12,
+    "api_requests": 20,
+    "read_only_tool_calls": 8,
+    "provider_errors": 1,
+    "fallbacks": 2,
+    "layout_repairs": 1,
+    "no_action_decisions": 1,
+    "milliseconds": {
+      "p50": 6675.408,
+      "p95": 11431.434,
+      "max": 12007.213
+    },
+    "conservative_cost_usd": 0.02377325
+  },
+  "budget": {
+    "run_id": "run-db5b080bcb502ed7cb20",
+    "run_limit_usd": 0.5,
+    "total_limit_usd": 1.0,
+    "run_accounted_usd": 0.02377325,
+    "total_accounted_usd": 0.080183125,
+    "request_states": {
+      "settled": 73,
+      "uncertain": 1
+    },
+    "reservation_breaches": 0,
+    "cost_basis": "conservative standard pricing; includes possible cache-write premium",
+    "scope": "this local application ledger only; not account balance"
+  },
+  "validation": {
+    "passed": true,
+    "decisions_checked": 2769,
+    "actions_checked": 886,
+    "issues": [],
+    "issue_count": 0,
+    "checks": [
+      "holdout",
+      "idempotency",
+      "timing",
+      "call_budgets",
+      "no_action_reasons",
+      "independent_policy_revalidation",
+      "daily_caps",
+      "proposal_export_consistency"
+    ]
+  },
+  "note": "Includes real timeout recovery, verifier rejection and a smaller verified layout repair. Not a full OpenAI-policy impact experiment."
+}

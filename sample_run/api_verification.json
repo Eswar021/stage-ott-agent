@@ -1,0 +1,94 @@
+{
+  "openai": {
+    "job_id": "J-304c1d12657816d56c7a",
+    "decision_id": "D-3373ab5a91c34870682a",
+    "provider": "openai",
+    "model": "gpt-6-luna",
+    "calls": 1,
+    "tool_calls": 0,
+    "provider_spend": {
+      "run_id": "J-304c1d12657816d56c7a",
+      "run_limit_usd": 0.5,
+      "total_limit_usd": 1.0,
+      "run_accounted_usd": 0.0011305,
+      "total_accounted_usd": 0.10307575,
+      "request_states": {
+        "settled": 95,
+        "uncertain": 1
+      },
+      "reservation_breaches": 0,
+      "cost_basis": "conservative standard pricing; includes possible cache-write premium",
+      "scope": "this local application ledger only; not account balance"
+    },
+    "status": "PUBLISHED",
+    "validation_failed": [],
+    "usage": {
+      "input_tokens": 5964,
+      "output_tokens": 770,
+      "reasoning_tokens": 242
+    }
+  },
+  "replay": {
+    "job_id": "J-9de1ab5f40e16aa67191",
+    "run_id": "runs/api_J-9de1ab5f40e16aa67191",
+    "validation": {
+      "passed": true,
+      "decisions_checked": 2769,
+      "actions_checked": 887,
+      "issues": [],
+      "issue_count": 0,
+      "checks": [
+        "holdout",
+        "idempotency",
+        "timing",
+        "call_budgets",
+        "no_action_reasons",
+        "independent_policy_revalidation",
+        "daily_caps",
+        "proposal_export_consistency"
+      ]
+    },
+    "simulator_policy_problems": 0
+  },
+  "recorded_build_date": "2026-10-31",
+  "application_version": "0.2.0",
+  "tests": {
+    "passed": 109,
+    "command": ".venv/bin/python -m pytest -q"
+  },
+  "browser_checks": [
+    "Chrome: saved OpenAI decision, actual provider/checks tab",
+    "Chrome: offline source-trigger submission and completed job",
+    "Chrome: evaluation with hybrid-policy label, denominators and confidence intervals",
+    "Chrome: durable completed replay/OpenAI job results",
+    "Chrome: completed full replay job opens its decision workspace directly"
+  ],
+  "scope": "Local single-process assignment API; not a production capacity benchmark. Interactive decisions excluded from impact estimates.",
+  "read_api_checks": {
+    "health_schema_runs_reports": "passed",
+    "saved_openai_decisions": 12,
+    "cached_decision_list_ms": 2.71,
+    "secret_scan_files": 1809,
+    "secret_matches": 0
+  },
+  "http_regression_tests": 17,
+  "publication_boundary": "Inbox acceptance is serialized with final evidence refresh, verification and SQLite commit; never with model inference.",
+  "final_build_smoke": {
+    "startup": "passed",
+    "dashboard": "passed",
+    "openapi": "passed",
+    "saved_decisions": 2769,
+    "graceful_shutdown": "passed"
+  },
+  "live_event_form_followup": {
+    "properties_examples": "Event-specific required-field guidance; actual catalogue episode pairs",
+    "checks": "All seven UI examples accepted by HTTP tests; source d3 playback example resolved without creating a job",
+    "paid_model_calls": 0
+  },
+  "startup_lock_followup": {
+    "second_cli_launch": "clean error without traceback",
+    "existing_server": "health endpoint stayed available; not stopped",
+    "stale_unlocked_file": "does not block startup",
+    "paid_model_calls": 0
+  }
+}

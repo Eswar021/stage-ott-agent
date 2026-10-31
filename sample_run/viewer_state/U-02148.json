@@ -1,0 +1,256 @@
+{
+  "last_event_id": "oua-013941",
+  "last_known_at": "2026-10-01T17:28:26.802Z",
+  "user_id": "U-02148",
+  "active_goal": null,
+  "last_decision_id": "D-d2e0c812dcca2d0eee74",
+  "active_plan": null,
+  "facts": {
+    "user_id": "U-02148",
+    "dialect": "d3",
+    "language": null,
+    "subscription_status": "lapsed",
+    "signup_at": "2026-05-10T02:53:36.662Z",
+    "signup_age_days": 158.65027011574074,
+    "plan_started_at": null,
+    "plan_ends_at": null,
+    "ever_paid": true,
+    "notifications_opt_in": true,
+    "whatsapp_opt_in": false,
+    "provenance": {
+      "dialect": {
+        "value": "d3",
+        "status": "known",
+        "source": "app_settings_feed",
+        "evidence_refs": [
+          "event:oua-013941"
+        ],
+        "known_at": "2026-10-01T17:28:26.802Z",
+        "freshness_s": 1213293.198,
+        "conflicts": [],
+        "resolution": "Current fresh app setting determines displayed dialect; no profile/link substitution for invalid settings.",
+        "raw_value": "d3"
+      },
+      "language": {
+        "value": null,
+        "status": "unknown",
+        "source": "app_settings_feed",
+        "evidence_refs": [
+          "event:oua-013941"
+        ],
+        "known_at": "2026-10-01T17:28:26.802Z",
+        "freshness_s": 1213293.198,
+        "conflicts": [],
+        "resolution": ""
+      },
+      "signup_at": {
+        "value": "2026-05-10T02:53:36.662Z",
+        "status": "known",
+        "source": "profile_or_signup_event",
+        "evidence_refs": [
+          "profile:U-02148@2026-09-29T12:49:18.476Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": ""
+      },
+      "subscription_status": {
+        "value": "lapsed",
+        "status": "known",
+        "source": "billing_events_reconciled_with_profile",
+        "evidence_refs": [
+          "profile:U-02148@2026-09-29T12:49:18.476Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Compare event-time estimate with fact update time; preserve ever-paid evidence and expire dated plans."
+      },
+      "ever_paid": {
+        "value": true,
+        "status": "known",
+        "source": "paid_history_or_profile",
+        "evidence_refs": [
+          "profile:U-02148@2026-09-29T12:49:18.476Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Paid events take precedence. Conflicting profile-only paid/never versions leave lifetime payment unknown."
+      },
+      "notifications_opt_in": {
+        "value": true,
+        "status": "known",
+        "source": "consent_profile_with_optout_override",
+        "evidence_refs": [
+          "profile:U-02148@2026-09-29T12:49:18.476Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Only explicit affirmative consent permits an outbound channel."
+      },
+      "whatsapp_opt_in": {
+        "value": false,
+        "status": "known",
+        "source": "consent_profile_with_optout_override",
+        "evidence_refs": [
+          "profile:U-02148@2026-09-29T12:49:18.476Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Only explicit affirmative consent permits an outbound channel."
+      }
+    },
+    "behavior": {
+      "play_count": 2,
+      "completion_count": 2,
+      "play_days_14d": [],
+      "top_genres": [
+        "Romance",
+        "Drama",
+        "Thriller"
+      ],
+      "genre_counts": {
+        "Romance": 1,
+        "Drama": 1,
+        "Thriller": 1
+      },
+      "unfinished_series": [
+        {
+          "content_slug": "yadha-kopa-d3",
+          "last_play_at": "2026-10-01T17:16:26.802Z",
+          "recency_uncertain": false,
+          "next_episode_id": "yadha-kopa-d3-s1e2",
+          "next_episode_number": 2,
+          "remaining_count": 6,
+          "evidence_refs": [
+            "event:oua-013940",
+            "episodes:yadha-kopa-d3"
+          ]
+        },
+        {
+          "content_slug": "yatite-roloda-d3",
+          "last_play_at": "2026-09-13T03:43:50.344Z",
+          "recency_uncertain": false,
+          "next_episode_id": "yatite-roloda-d3-s1e2",
+          "next_episode_number": 2,
+          "remaining_count": 22,
+          "evidence_refs": [
+            "event:0aaff1cd-6d3f-414e-889e-134b33b6b8df",
+            "episodes:yatite-roloda-d3"
+          ]
+        }
+      ],
+      "prior_app_open_count_14d": 0,
+      "uncertain_play_count_14d": 0,
+      "uncertain_open_count_14d": 0,
+      "last_play_at": "2026-10-01T17:16:26.802Z",
+      "last_app_open_before_trigger": "2026-10-01T17:14:00.802Z",
+      "play_evidence": [
+        "event:0aaff1cd-6d3f-414e-889e-134b33b6b8df",
+        "event:oua-013940"
+      ],
+      "completion_evidence": [
+        "event:d96ae84f-7175-46d4-b448-5985274b3f2a",
+        "event:oua-013941"
+      ],
+      "recent_open_evidence": []
+    },
+    "observation_coverage": {
+      "start": "2026-08-31T18:30:00.000Z",
+      "end": "2026-10-15T18:30:00.000Z",
+      "lifetime_from_signup": false,
+      "covers_prior_14d": true,
+      "assumption": "Supplied historical export covers instrumented app activity within its stated window; offline arrivals can still revise facts."
+    },
+    "trigger_buffered_s": 0.0,
+    "trigger_is_fresh": true
+  },
+  "goal_history": [
+    {
+      "goal_instance_id": "G-1ac5d6a4be9d909953c7",
+      "id": "G07",
+      "goal_id": "G07",
+      "user_id": "U-02148",
+      "started_at": "2026-10-01T10:47:38.710Z",
+      "deadline": "2026-10-04T10:47:38.710Z",
+      "success": {
+        "event": "play_started",
+        "condition": "same content_slug as the unfinished series",
+        "window_hours": 72
+      },
+      "version": "G07@2026-09-30",
+      "target_slug": "yatite-roloda-d3",
+      "status": "failed",
+      "evidence": [
+        "event:0aaff1cd-6d3f-414e-889e-134b33b6b8df",
+        "episodes:yatite-roloda-d3",
+        "goal_rule:G07"
+      ],
+      "action_ids": [
+        "A-956d5a92a9b41791cd1d",
+        "A-5451fabf5ccd3d285de2",
+        "A-76bf62b29f1ceabbd906"
+      ],
+      "rule_history": [],
+      "plan": {
+        "intended_behavior_change": "resume_series_3d",
+        "review_on": [
+          "goal_success_signal",
+          "subscription_change",
+          "dialect_change",
+          "goal_deadline",
+          "goal_rule_correction"
+        ]
+      },
+      "reason_summary": "Retain the eligible active commitment and adapt available content.",
+      "judgment": {
+        "goal_instance_id": "G-1ac5d6a4be9d909953c7",
+        "goal_id": "G07",
+        "user_id": "U-02148",
+        "rule_version": "G07@2026-09-30",
+        "started_at": "2026-10-01T10:47:38.710Z",
+        "deadline": "2026-10-04T10:47:38.710Z",
+        "judged_at": "2026-10-15T18:30:00.000Z",
+        "status": "failed",
+        "evidence": [],
+        "evidence_event_ids": [],
+        "success_at": null,
+        "coverage_complete": true,
+        "rule_history": [],
+        "reason": "The complete observed goal window ended without its required signal.",
+        "attribution": {
+          "classification": "no_success_observed",
+          "linked_success_event_ids": [],
+          "observed_exposure_event_ids": [
+            "oua-013936",
+            "oua-013939"
+          ],
+          "confirmed_delivery_event_ids": [],
+          "causal_claim": false,
+          "note": "Temporal/session linkage is descriptive; causal impact is estimated by randomized assignment."
+        }
+      }
+    }
+  ],
+  "facts_as_of": "2026-10-15T18:30:00.000Z",
+  "observed_outcomes": [
+    {
+      "goal_instance_id": "G-1ac5d6a4be9d909953c7",
+      "status": "failed",
+      "evidence": []
+    }
+  ],
+  "learning": [
+    {
+      "goal_instance_id": "G-1ac5d6a4be9d909953c7",
+      "observed_status": "failed",
+      "evidence": [],
+      "note": "Observed result, not an individual causal effect."
+    }
+  ],
+  "revision": 11
+}

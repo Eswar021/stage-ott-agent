@@ -1,0 +1,259 @@
+{
+  "last_event_id": "oua-030902",
+  "last_known_at": "2026-10-13T16:29:32.000Z",
+  "user_id": "U-04915",
+  "active_goal": null,
+  "last_decision_id": "D-775305891cb3a722776b",
+  "active_plan": null,
+  "facts": {
+    "user_id": "U-04915",
+    "dialect": "d1",
+    "language": null,
+    "subscription_status": "never",
+    "signup_at": "2026-09-20T08:18:47.925Z",
+    "signup_age_days": 25.4244453125,
+    "plan_started_at": null,
+    "plan_ends_at": null,
+    "ever_paid": false,
+    "notifications_opt_in": true,
+    "whatsapp_opt_in": false,
+    "provenance": {
+      "dialect": {
+        "value": "d1",
+        "status": "known",
+        "source": "app_settings_feed",
+        "evidence_refs": [
+          "event:oua-030902"
+        ],
+        "known_at": "2026-10-13T16:29:32.000Z",
+        "freshness_s": 180028.0,
+        "conflicts": [],
+        "resolution": "Current fresh app setting determines displayed dialect; no profile/link substitution for invalid settings.",
+        "raw_value": "d1"
+      },
+      "language": {
+        "value": null,
+        "status": "unknown",
+        "source": "app_settings_feed",
+        "evidence_refs": [
+          "event:oua-030902"
+        ],
+        "known_at": "2026-10-13T16:29:32.000Z",
+        "freshness_s": 180028.0,
+        "conflicts": [],
+        "resolution": ""
+      },
+      "signup_at": {
+        "value": "2026-09-20T08:18:47.925Z",
+        "status": "known",
+        "source": "profile_or_signup_event",
+        "evidence_refs": [
+          "profile:U-04915@2026-09-29T12:29:22.116Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": ""
+      },
+      "subscription_status": {
+        "value": "never",
+        "status": "known",
+        "source": "billing_events_reconciled_with_profile",
+        "evidence_refs": [
+          "profile:U-04915@2026-09-29T12:29:22.116Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Compare event-time estimate with fact update time; preserve ever-paid evidence and expire dated plans."
+      },
+      "ever_paid": {
+        "value": false,
+        "status": "known",
+        "source": "paid_history_or_profile",
+        "evidence_refs": [
+          "profile:U-04915@2026-09-29T12:29:22.116Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Paid events take precedence. Conflicting profile-only paid/never versions leave lifetime payment unknown."
+      },
+      "notifications_opt_in": {
+        "value": true,
+        "status": "known",
+        "source": "consent_profile_with_optout_override",
+        "evidence_refs": [
+          "profile:U-04915@2026-09-29T12:29:22.116Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Only explicit affirmative consent permits an outbound channel."
+      },
+      "whatsapp_opt_in": {
+        "value": false,
+        "status": "known",
+        "source": "consent_profile_with_optout_override",
+        "evidence_refs": [
+          "profile:U-04915@2026-09-29T12:29:22.116Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Only explicit affirmative consent permits an outbound channel."
+      }
+    },
+    "behavior": {
+      "play_count": 2,
+      "completion_count": 2,
+      "play_days_14d": [
+        "2026-10-13"
+      ],
+      "top_genres": [
+        "Thriller",
+        "Comedy",
+        "Family"
+      ],
+      "genre_counts": {
+        "Thriller": 1,
+        "Comedy": 1,
+        "Family": 1
+      },
+      "unfinished_series": [
+        {
+          "content_slug": "dikagi-giti-d1",
+          "last_play_at": "2026-10-01T12:48:05.132Z",
+          "recency_uncertain": false,
+          "next_episode_id": "dikagi-giti-d1-s1e2",
+          "next_episode_number": 2,
+          "remaining_count": 15,
+          "evidence_refs": [
+            "event:oua-030883",
+            "episodes:dikagi-giti-d1"
+          ]
+        }
+      ],
+      "prior_app_open_count_14d": 7,
+      "uncertain_play_count_14d": 0,
+      "uncertain_open_count_14d": 0,
+      "last_play_at": "2026-10-13T15:57:32.000Z",
+      "last_app_open_before_trigger": "2026-10-13T15:54:00.000Z",
+      "play_evidence": [
+        "event:oua-030883",
+        "event:oua-030901"
+      ],
+      "completion_evidence": [
+        "event:oua-030884",
+        "event:oua-030902"
+      ],
+      "recent_open_evidence": [
+        "event:oua-030895",
+        "event:oua-030897",
+        "event:oua-030899"
+      ]
+    },
+    "observation_coverage": {
+      "start": "2026-09-20T08:18:47.925Z",
+      "end": "2026-10-15T18:30:00.000Z",
+      "lifetime_from_signup": true,
+      "covers_prior_14d": true,
+      "assumption": "Supplied historical export covers instrumented app activity within its stated window; offline arrivals can still revise facts."
+    },
+    "trigger_buffered_s": 0.0,
+    "trigger_is_fresh": true
+  },
+  "goal_history": [
+    {
+      "goal_instance_id": "G-4c1d4c588d72c158f368",
+      "id": "G02",
+      "goal_id": "G02",
+      "user_id": "U-04915",
+      "started_at": "2026-10-01T10:20:34.329Z",
+      "deadline": "2026-10-04T10:20:34.329Z",
+      "success": {
+        "event": "episode_completed",
+        "condition": "any episode",
+        "window_hours": 72
+      },
+      "version": "G02@2026-09-30",
+      "target_slug": null,
+      "status": "succeeded",
+      "evidence": [
+        "profile:U-04915@2026-09-29T12:29:22.116Z",
+        "goal_rule:G02"
+      ],
+      "action_ids": [
+        "A-72cf33018e126604405f",
+        "A-7c7c3f6395bc5b964b49",
+        "A-2fa4bdd545296c905d3e"
+      ],
+      "rule_history": [],
+      "plan": {
+        "intended_behavior_change": "first_full_episode_3d",
+        "review_on": [
+          "goal_success_signal",
+          "subscription_change",
+          "dialect_change",
+          "goal_deadline",
+          "goal_rule_correction"
+        ]
+      },
+      "reason_summary": "Retain the eligible active commitment and adapt available content.",
+      "judgment": {
+        "goal_instance_id": "G-4c1d4c588d72c158f368",
+        "goal_id": "G02",
+        "user_id": "U-04915",
+        "rule_version": "G02@2026-09-30",
+        "started_at": "2026-10-01T10:20:34.329Z",
+        "deadline": "2026-10-04T10:20:34.329Z",
+        "judged_at": "2026-10-15T18:30:00.000Z",
+        "status": "succeeded",
+        "evidence": [
+          "event:oua-030884"
+        ],
+        "evidence_event_ids": [
+          "oua-030884"
+        ],
+        "success_at": "2026-10-01T13:14:05.132Z",
+        "coverage_complete": true,
+        "rule_history": [],
+        "reason": "Required signal observed after commitment and within its recorded window.",
+        "attribution": {
+          "classification": "exposure_linked",
+          "linked_success_event_ids": [
+            "oua-030884"
+          ],
+          "observed_exposure_event_ids": [
+            "oua-030882",
+            "oua-030886"
+          ],
+          "confirmed_delivery_event_ids": [],
+          "causal_claim": false,
+          "note": "Temporal/session linkage is descriptive; causal impact is estimated by randomized assignment."
+        }
+      }
+    }
+  ],
+  "facts_as_of": "2026-10-15T18:30:00.000Z",
+  "observed_outcomes": [
+    {
+      "goal_instance_id": "G-4c1d4c588d72c158f368",
+      "status": "succeeded",
+      "evidence": [
+        "event:oua-030884"
+      ]
+    }
+  ],
+  "learning": [
+    {
+      "goal_instance_id": "G-4c1d4c588d72c158f368",
+      "observed_status": "succeeded",
+      "evidence": [
+        "event:oua-030884"
+      ],
+      "note": "Observed result, not an individual causal effect."
+    }
+  ],
+  "revision": 26
+}

@@ -1,0 +1,89 @@
+{
+  "recorded_build_date": "2026-10-31",
+  "recorded_run_id": "run-b43273abf4688fb7691f",
+  "source_pack_fingerprint": "fbec61c630094913ea035d4d38be429b68e369ff302526de8641ba543ba02548",
+  "tests": {
+    "passed": 109,
+    "command": ".venv/bin/python -m pytest -q"
+  },
+  "installation": {
+    "dependency_lock": "uv.lock",
+    "verified_command": "uv sync --extra dev --frozen",
+    "python": "3.14.3",
+    "openai_sdk": "2.16.0"
+  },
+  "offline": {
+    "decisions": 2769,
+    "unique_decisions": 2679,
+    "users": 1746,
+    "actions": 887,
+    "independent_validation_passed": true,
+    "holdout_actions": 0,
+    "simulator_policy_problems": 0,
+    "deadline_misses_60s": 0,
+    "latency_ms": {
+      "p50": 0.09,
+      "p95": 5.72,
+      "p99": 7.398,
+      "max": 41.397,
+      "mean": 1.709
+    },
+    "corrected_open_G03": 26
+  },
+  "live": {
+    "planning_attempts": 12,
+    "api_requests": 20,
+    "read_only_tool_calls": 8,
+    "provider_errors": 1,
+    "fallbacks": 2,
+    "layout_repairs": 1,
+    "no_action_decisions": 1,
+    "milliseconds": {
+      "p50": 6675.408,
+      "p95": 11431.434,
+      "max": 12007.213
+    },
+    "conservative_cost_usd": 0.02377325
+  },
+  "budget": {
+    "run_id": "run-db5b080bcb502ed7cb20",
+    "run_limit_usd": 0.5,
+    "total_limit_usd": 1.0,
+    "run_accounted_usd": 0.02377325,
+    "total_accounted_usd": 0.080183125,
+    "request_states": {
+      "settled": 73,
+      "uncertain": 1
+    },
+    "reservation_breaches": 0,
+    "cost_basis": "conservative standard pricing; includes possible cache-write premium",
+    "scope": "this local application ledger only; not account balance"
+  },
+  "source_pack_unchanged": true,
+  "resume": "Completed-run resume repeated no model call or publication; interrupted-job recovery also covered by integration tests.",
+  "alternate_seed": {
+    "seed": "oua-validation-second",
+    "simulator_policy_problems": 0
+  },
+  "scope": "Assignment CLI and supplied simulator; immediate-only messages; G06/G10/G11 unsupported; logical replay scheduler, no production-scale claim.",
+  "startup_followup": {
+    "visible_loading_progress": true,
+    "actual_sigint_exit_code": 130,
+    "traceback_on_interrupt": false,
+    "offline_full_replay_passed": true,
+    "api_spend_usd": 0
+  },
+  "readable_output_followup": {
+    "compact_summary_export": "decision_summaries.jsonl",
+    "content_source": "approved published actions, not raw model proposals",
+    "model_calls_made_for_export": 0
+  },
+  "api_extension": {
+    "application_version": "0.2.0",
+    "evidence": "api_verification.json",
+    "http_regression_tests": 17,
+    "full_http_replay_validation_passed": true,
+    "live_http_openai_checks_passed": true,
+    "duplicate_server_startup": "Clean CLI error; existing server left healthy"
+  }
+}

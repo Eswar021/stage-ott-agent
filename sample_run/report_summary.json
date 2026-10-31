@@ -1,0 +1,260 @@
+{
+  "diagnostics": {
+    "actions_by_type": {
+      "home_page": 887
+    },
+    "decisions_by_status": {
+      "PUBLISHED": 887,
+      "NO_ACTION": 1882
+    },
+    "goals_by_status": {
+      "failed": 653,
+      "succeeded": 41
+    },
+    "goals_by_id_and_status": {
+      "G05": {
+        "failed": 128,
+        "succeeded": 5
+      },
+      "G07": {
+        "failed": 398,
+        "succeeded": 10
+      },
+      "G12": {
+        "failed": 3,
+        "succeeded": 3
+      },
+      "G08": {
+        "succeeded": 9,
+        "failed": 24
+      },
+      "G09": {
+        "failed": 19,
+        "succeeded": 2
+      },
+      "G01": {
+        "succeeded": 3,
+        "failed": 7
+      },
+      "G02": {
+        "succeeded": 7,
+        "failed": 28
+      },
+      "G03": {
+        "succeeded": 2,
+        "failed": 46
+      }
+    },
+    "outcome_events_raw": 31578,
+    "outcome_events_canonical": 31574,
+    "outcome_event_counts": {
+      "app_open": 12723,
+      "play_progress": 68,
+      "home_page_shown": 10772,
+      "play_started": 5179,
+      "episode_completed": 2584,
+      "purchase_completed": 72,
+      "home_viewed": 52,
+      "title_viewed": 25,
+      "signup_completed": 88,
+      "login_success": 5,
+      "search": 5,
+      "paywall_viewed": 1
+    },
+    "published_pages_exposed": 761,
+    "published_messages_delivered": 0,
+    "published_messages_clicked": 0,
+    "holdout_action_count": 0
+  },
+  "latency": {
+    "provider": "replay",
+    "model": "deterministic-lifecycle-v1",
+    "scope": "All trigger deliveries including holdout/duplicate gates and deterministic fallback. See live_openai for live-only timings.",
+    "decision_deliveries": 2769,
+    "unique_decisions": 2679,
+    "milliseconds": {
+      "p50": 0.09,
+      "p95": 5.72,
+      "p99": 7.398,
+      "max": 41.397,
+      "mean": 1.709
+    },
+    "over_60_seconds": 0,
+    "over_300_seconds": 0,
+    "model_calls": {
+      "total": 887,
+      "max_per_decision": 1
+    },
+    "tool_calls": {
+      "total": 4652,
+      "max_per_decision": 4
+    },
+    "live_openai": {
+      "planning_attempts": 0,
+      "api_requests": 0,
+      "read_only_tool_calls": 0,
+      "provider_errors": 0,
+      "fallbacks": 0,
+      "layout_repairs": 0,
+      "no_action_decisions": 0,
+      "milliseconds": {
+        "p50": null,
+        "p95": null,
+        "max": null
+      },
+      "conservative_cost_usd": 0
+    },
+    "provider_summary": {
+      "run_accounted_usd": 0,
+      "total_accounted_usd": 0
+    },
+    "note": "Includes measured decision handling and injected dependency waits. Offline provider results are not OpenAI latency measurements. No production-scale throughput claim is made."
+  },
+  "metrics": {
+    "any_play_7d": {
+      "arms": {
+        "agent": {
+          "users": 863,
+          "successes": 580,
+          "unknown": 0,
+          "observed_failures": 283,
+          "rate": 0.6720741599073001,
+          "rate_bounds": [
+            0.6720741599073001,
+            0.6720741599073001
+          ]
+        },
+        "holdout": {
+          "users": 883,
+          "successes": 571,
+          "unknown": 0,
+          "observed_failures": 312,
+          "rate": 0.6466591166477916,
+          "rate_bounds": [
+            0.6466591166477916,
+            0.6466591166477916
+          ]
+        }
+      },
+      "difference_bounds": [
+        0.025415043259508496,
+        0.025415043259508496
+      ],
+      "difference": 0.025415043259508496,
+      "difference_ci95": [
+        -0.019027453238515457,
+        0.06985753975753245
+      ],
+      "ci_method": "Unadjusted independent-binomial normal approximation; descriptive, no multiplicity correction."
+    },
+    "episode_completion_7d": {
+      "arms": {
+        "agent": {
+          "users": 863,
+          "successes": 388,
+          "unknown": 0,
+          "observed_failures": 475,
+          "rate": 0.4495944380069525,
+          "rate_bounds": [
+            0.4495944380069525,
+            0.4495944380069525
+          ]
+        },
+        "holdout": {
+          "users": 883,
+          "successes": 381,
+          "unknown": 0,
+          "observed_failures": 502,
+          "rate": 0.43148357870894677,
+          "rate_bounds": [
+            0.43148357870894677,
+            0.43148357870894677
+          ]
+        }
+      },
+      "difference_bounds": [
+        0.01811085929800571,
+        0.01811085929800571
+      ],
+      "difference": 0.01811085929800571,
+      "difference_ci95": [
+        -0.02845934514572073,
+        0.06468106374173216
+      ],
+      "ci_method": "Unadjusted independent-binomial normal approximation; descriptive, no multiplicity correction."
+    },
+    "first_paid_purchase_7d": {
+      "arms": {
+        "agent": {
+          "users": 382,
+          "successes": 18,
+          "unknown": 0,
+          "observed_failures": 364,
+          "rate": 0.04712041884816754,
+          "rate_bounds": [
+            0.04712041884816754,
+            0.04712041884816754
+          ]
+        },
+        "holdout": {
+          "users": 376,
+          "successes": 22,
+          "unknown": 0,
+          "observed_failures": 354,
+          "rate": 0.05851063829787234,
+          "rate_bounds": [
+            0.05851063829787234,
+            0.05851063829787234
+          ]
+        }
+      },
+      "difference_bounds": [
+        -0.011390219449704801,
+        -0.011390219449704801
+      ],
+      "difference": -0.011390219449704801,
+      "difference_ci95": [
+        -0.04323933592058285,
+        0.020458897021173247
+      ],
+      "ci_method": "Unadjusted independent-binomial normal approximation; descriptive, no multiplicity correction."
+    },
+    "three_play_days_14d": {
+      "arms": {
+        "agent": {
+          "users": 863,
+          "successes": 337,
+          "unknown": 0,
+          "observed_failures": 526,
+          "rate": 0.3904982618771727,
+          "rate_bounds": [
+            0.3904982618771727,
+            0.3904982618771727
+          ]
+        },
+        "holdout": {
+          "users": 883,
+          "successes": 332,
+          "unknown": 0,
+          "observed_failures": 551,
+          "rate": 0.37599093997734995,
+          "rate_bounds": [
+            0.37599093997734995,
+            0.37599093997734995
+          ]
+        }
+      },
+      "difference_bounds": [
+        0.014507321899822734,
+        0.014507321899822734
+      ],
+      "difference": 0.014507321899822734,
+      "difference_ci95": [
+        -0.031102295517386698,
+        0.060116939317032166
+      ],
+      "ci_method": "Unadjusted independent-binomial normal approximation; descriptive, no multiplicity correction."
+    }
+  },
+  "partial_run": false
+}

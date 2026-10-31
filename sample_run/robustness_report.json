@@ -1,0 +1,152 @@
+{
+  "seed": "oua-validation-second",
+  "policy_problem_count": 0,
+  "events_written": 31810,
+  "metrics": {
+    "any_play_7d": {
+      "arms": {
+        "agent": {
+          "users": 863,
+          "successes": 555,
+          "unknown": 0,
+          "observed_failures": 308,
+          "rate": 0.6431054461181923,
+          "rate_bounds": [
+            0.6431054461181923,
+            0.6431054461181923
+          ]
+        },
+        "holdout": {
+          "users": 883,
+          "successes": 568,
+          "unknown": 0,
+          "observed_failures": 315,
+          "rate": 0.6432616081540203,
+          "rate_bounds": [
+            0.6432616081540203,
+            0.6432616081540203
+          ]
+        }
+      },
+      "difference_bounds": [
+        -0.00015616203582802246,
+        -0.00015616203582802246
+      ],
+      "difference": -0.00015616203582802246,
+      "difference_ci95": [
+        -0.045101285979220564,
+        0.04478896190756452
+      ],
+      "ci_method": "Unadjusted independent-binomial normal approximation; descriptive, no multiplicity correction."
+    },
+    "episode_completion_7d": {
+      "arms": {
+        "agent": {
+          "users": 863,
+          "successes": 380,
+          "unknown": 0,
+          "observed_failures": 483,
+          "rate": 0.440324449594438,
+          "rate_bounds": [
+            0.440324449594438,
+            0.440324449594438
+          ]
+        },
+        "holdout": {
+          "users": 883,
+          "successes": 381,
+          "unknown": 0,
+          "observed_failures": 502,
+          "rate": 0.43148357870894677,
+          "rate_bounds": [
+            0.43148357870894677,
+            0.43148357870894677
+          ]
+        }
+      },
+      "difference_bounds": [
+        0.008840870885491237,
+        0.008840870885491237
+      ],
+      "difference": 0.008840870885491237,
+      "difference_ci95": [
+        -0.03768053771895132,
+        0.055362279489933795
+      ],
+      "ci_method": "Unadjusted independent-binomial normal approximation; descriptive, no multiplicity correction."
+    },
+    "first_paid_purchase_7d": {
+      "arms": {
+        "agent": {
+          "users": 382,
+          "successes": 14,
+          "unknown": 0,
+          "observed_failures": 368,
+          "rate": 0.03664921465968586,
+          "rate_bounds": [
+            0.03664921465968586,
+            0.03664921465968586
+          ]
+        },
+        "holdout": {
+          "users": 376,
+          "successes": 22,
+          "unknown": 0,
+          "observed_failures": 354,
+          "rate": 0.05851063829787234,
+          "rate_bounds": [
+            0.05851063829787234,
+            0.05851063829787234
+          ]
+        }
+      },
+      "difference_bounds": [
+        -0.02186142363818648,
+        -0.02186142363818648
+      ],
+      "difference": -0.02186142363818648,
+      "difference_ci95": [
+        -0.05215801383431103,
+        0.008435166557938072
+      ],
+      "ci_method": "Unadjusted independent-binomial normal approximation; descriptive, no multiplicity correction."
+    },
+    "three_play_days_14d": {
+      "arms": {
+        "agent": {
+          "users": 863,
+          "successes": 330,
+          "unknown": 0,
+          "observed_failures": 533,
+          "rate": 0.3823870220162225,
+          "rate_bounds": [
+            0.3823870220162225,
+            0.3823870220162225
+          ]
+        },
+        "holdout": {
+          "users": 883,
+          "successes": 339,
+          "unknown": 0,
+          "observed_failures": 544,
+          "rate": 0.38391845979614947,
+          "rate_bounds": [
+            0.38391845979614947,
+            0.38391845979614947
+          ]
+        }
+      },
+      "difference_bounds": [
+        -0.0015314377799269807,
+        -0.0015314377799269807
+      ],
+      "difference": -0.0015314377799269807,
+      "difference_ci95": [
+        -0.04714193507589486,
+        0.0440790595160409
+      ],
+      "ci_method": "Unadjusted independent-binomial normal approximation; descriptive, no multiplicity correction."
+    }
+  },
+  "note": "Second synthetic seed with the same verified actions; no claim to have seen evaluator replay day."
+}

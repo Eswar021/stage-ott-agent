@@ -1,0 +1,403 @@
+{
+  "last_event_id": "oua-018685",
+  "last_known_at": "2026-10-15T06:45:47.000Z",
+  "user_id": "U-02992",
+  "active_goal": null,
+  "last_decision_id": "D-824947b304f2ecc9f920",
+  "active_plan": null,
+  "facts": {
+    "user_id": "U-02992",
+    "dialect": "d2",
+    "language": null,
+    "subscription_status": "lapsed",
+    "signup_at": "2026-02-22T10:43:03.876Z",
+    "signup_age_days": 235.32426069444446,
+    "plan_started_at": "2026-09-05T09:18:11.007Z",
+    "plan_ends_at": "2026-10-05T09:18:11.007Z",
+    "ever_paid": true,
+    "notifications_opt_in": true,
+    "whatsapp_opt_in": false,
+    "provenance": {
+      "dialect": {
+        "value": "d2",
+        "status": "known",
+        "source": "app_settings_feed",
+        "evidence_refs": [
+          "event:oua-018685"
+        ],
+        "known_at": "2026-10-15T06:45:47.000Z",
+        "freshness_s": 42253.0,
+        "conflicts": [
+          {
+            "source": "profile:U-02992@2026-09-29T10:11:30.931Z",
+            "value": "d5"
+          }
+        ],
+        "resolution": "Current fresh app setting determines displayed dialect; no profile/link substitution for invalid settings.",
+        "raw_value": "d2"
+      },
+      "language": {
+        "value": null,
+        "status": "unknown",
+        "source": "app_settings_feed",
+        "evidence_refs": [
+          "event:oua-018685"
+        ],
+        "known_at": "2026-10-15T06:45:47.000Z",
+        "freshness_s": 42253.0,
+        "conflicts": [],
+        "resolution": ""
+      },
+      "signup_at": {
+        "value": "2026-02-22T10:43:03.876Z",
+        "status": "known",
+        "source": "profile_or_signup_event",
+        "evidence_refs": [
+          "profile:U-02992@2026-09-29T10:11:30.931Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": ""
+      },
+      "subscription_status": {
+        "value": "lapsed",
+        "status": "known",
+        "source": "billing_events_reconciled_with_profile",
+        "evidence_refs": [
+          "profile:U-02992@2026-09-29T10:11:30.931Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [
+          {
+            "reason": "plan_window_elapsed"
+          }
+        ],
+        "resolution": "Compare event-time estimate with fact update time; preserve ever-paid evidence and expire dated plans."
+      },
+      "ever_paid": {
+        "value": true,
+        "status": "known",
+        "source": "paid_history_or_profile",
+        "evidence_refs": [
+          "event:6abb9fc4-abae-4dc2-845d-f28d3c234c22"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Paid events take precedence. Conflicting profile-only paid/never versions leave lifetime payment unknown."
+      },
+      "notifications_opt_in": {
+        "value": true,
+        "status": "known",
+        "source": "consent_profile_with_optout_override",
+        "evidence_refs": [
+          "profile:U-02992@2026-09-29T10:11:30.931Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Only explicit affirmative consent permits an outbound channel."
+      },
+      "whatsapp_opt_in": {
+        "value": false,
+        "status": "known",
+        "source": "consent_profile_with_optout_override",
+        "evidence_refs": [
+          "profile:U-02992@2026-09-29T10:11:30.931Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Only explicit affirmative consent permits an outbound channel."
+      }
+    },
+    "behavior": {
+      "play_count": 23,
+      "completion_count": 11,
+      "play_days_14d": [
+        "2026-10-03",
+        "2026-10-04",
+        "2026-10-07",
+        "2026-10-08",
+        "2026-10-12",
+        "2026-10-14",
+        "2026-10-15"
+      ],
+      "top_genres": [
+        "Action",
+        "Romance",
+        "Drama"
+      ],
+      "genre_counts": {
+        "Action": 10,
+        "Romance": 7,
+        "Drama": 6,
+        "Family": 5,
+        "Comedy": 4,
+        "Crime": 3,
+        "Devotional": 2,
+        "Thriller": 2
+      },
+      "unfinished_series": [
+        {
+          "content_slug": "kolani-mari-d2",
+          "last_play_at": "2026-10-15T06:45:47.000Z",
+          "recency_uncertain": false,
+          "next_episode_id": "kolani-mari-d2-s1e1",
+          "next_episode_number": 1,
+          "remaining_count": 54,
+          "evidence_refs": [
+            "event:oua-018685",
+            "episodes:kolani-mari-d2"
+          ]
+        },
+        {
+          "content_slug": "guneba-guba-d2",
+          "last_play_at": "2026-10-14T06:57:08.000Z",
+          "recency_uncertain": false,
+          "next_episode_id": "guneba-guba-d2-s1e1",
+          "next_episode_number": 1,
+          "remaining_count": 50,
+          "evidence_refs": [
+            "event:oua-018683",
+            "episodes:guneba-guba-d2"
+          ]
+        },
+        {
+          "content_slug": "sune-hadapa-d2",
+          "last_play_at": "2026-10-07T15:08:23.000Z",
+          "recency_uncertain": false,
+          "next_episode_id": "sune-hadapa-d2-s1e2",
+          "next_episode_number": 2,
+          "remaining_count": 55,
+          "evidence_refs": [
+            "event:oua-018670",
+            "episodes:sune-hadapa-d2"
+          ]
+        },
+        {
+          "content_slug": "dira-kova-d2",
+          "last_play_at": "2026-10-03T06:38:25.000Z",
+          "recency_uncertain": false,
+          "next_episode_id": "dira-kova-d2-s1e2",
+          "next_episode_number": 2,
+          "remaining_count": 32,
+          "evidence_refs": [
+            "event:oua-018659",
+            "episodes:dira-kova-d2"
+          ]
+        },
+        {
+          "content_slug": "pichu-konani-d2",
+          "last_play_at": "2026-10-01T03:42:43.508Z",
+          "recency_uncertain": false,
+          "next_episode_id": "pichu-konani-d2-s1e1",
+          "next_episode_number": 1,
+          "remaining_count": 47,
+          "evidence_refs": [
+            "event:oua-018654",
+            "episodes:pichu-konani-d2"
+          ]
+        },
+        {
+          "content_slug": "molo-d2",
+          "last_play_at": "2026-09-29T15:16:59.642Z",
+          "recency_uncertain": false,
+          "next_episode_id": "molo-d2-s1e3",
+          "next_episode_number": 3,
+          "remaining_count": 5,
+          "evidence_refs": [
+            "event:454ea0e4-e212-4287-9e54-05f6f28c86a1",
+            "episodes:molo-d2"
+          ]
+        },
+        {
+          "content_slug": "guka-kosusa-d2",
+          "last_play_at": "2026-09-25T03:55:00.324Z",
+          "recency_uncertain": false,
+          "next_episode_id": "guka-kosusa-d2-s1e2",
+          "next_episode_number": 2,
+          "remaining_count": 40,
+          "evidence_refs": [
+            "event:c45c6ca2-190d-4b6b-a79d-659d897249c4",
+            "episodes:guka-kosusa-d2"
+          ]
+        },
+        {
+          "content_slug": "gibha-bhalomo-d2",
+          "last_play_at": "2026-09-23T07:00:31.985Z",
+          "recency_uncertain": false,
+          "next_episode_id": "gibha-bhalomo-d2-s1e2",
+          "next_episode_number": 2,
+          "remaining_count": 47,
+          "evidence_refs": [
+            "event:0db782a6-e1d9-48bd-a381-6141fa66a056",
+            "episodes:gibha-bhalomo-d2"
+          ]
+        },
+        {
+          "content_slug": "dhapipa-gini-d2",
+          "last_play_at": "2026-09-10T04:35:24.410Z",
+          "recency_uncertain": false,
+          "next_episode_id": "dhapipa-gini-d2-s1e3",
+          "next_episode_number": 3,
+          "remaining_count": 53,
+          "evidence_refs": [
+            "event:f27fd838-ee9f-4507-a838-794e59f0afb6",
+            "episodes:dhapipa-gini-d2"
+          ]
+        },
+        {
+          "content_slug": "teja-koriri-d2",
+          "last_play_at": "2026-09-08T16:17:38.982Z",
+          "recency_uncertain": false,
+          "next_episode_id": "teja-koriri-d2-s1e2",
+          "next_episode_number": 2,
+          "remaining_count": 23,
+          "evidence_refs": [
+            "event:f1b32ddd-2dee-4fb5-a5d5-43df97d423b9",
+            "episodes:teja-koriri-d2"
+          ]
+        },
+        {
+          "content_slug": "kapa-nina-d2",
+          "last_play_at": "2026-09-05T06:01:20.705Z",
+          "recency_uncertain": false,
+          "next_episode_id": "kapa-nina-d2-s1e1",
+          "next_episode_number": 1,
+          "remaining_count": 36,
+          "evidence_refs": [
+            "event:7d6d9c69-5176-43a7-a93b-8bd285423037",
+            "episodes:kapa-nina-d2"
+          ]
+        },
+        {
+          "content_slug": "rigu-dhadi-d2",
+          "last_play_at": "2026-09-02T10:28:01.717Z",
+          "recency_uncertain": false,
+          "next_episode_id": "rigu-dhadi-d2-s1e1",
+          "next_episode_number": 1,
+          "remaining_count": 23,
+          "evidence_refs": [
+            "event:465d5794-caec-459e-a14f-3c280786cb54",
+            "episodes:rigu-dhadi-d2"
+          ]
+        }
+      ],
+      "prior_app_open_count_14d": 12,
+      "uncertain_play_count_14d": 0,
+      "uncertain_open_count_14d": 0,
+      "last_play_at": "2026-10-15T06:45:47.000Z",
+      "last_app_open_before_trigger": "2026-10-15T06:45:00.000Z",
+      "play_evidence": [
+        "event:oua-018670",
+        "event:oua-018674",
+        "event:oua-018678",
+        "event:oua-018683",
+        "event:oua-018685"
+      ],
+      "completion_evidence": [
+        "event:oua-018660",
+        "event:oua-018671",
+        "event:oua-018679"
+      ],
+      "recent_open_evidence": [
+        "event:oua-018681",
+        "event:oua-018680",
+        "event:oua-018684"
+      ]
+    },
+    "observation_coverage": {
+      "start": "2026-08-31T18:30:00.000Z",
+      "end": "2026-10-15T18:30:00.000Z",
+      "lifetime_from_signup": false,
+      "covers_prior_14d": true,
+      "assumption": "Supplied historical export covers instrumented app activity within its stated window; offline arrivals can still revise facts."
+    },
+    "trigger_buffered_s": 0.0,
+    "trigger_is_fresh": true
+  },
+  "goal_history": [
+    {
+      "goal_instance_id": "G-4b941dee27bd262e0c40",
+      "id": "G07",
+      "goal_id": "G07",
+      "user_id": "U-02992",
+      "started_at": "2026-10-01T03:39:23.513Z",
+      "deadline": "2026-10-04T03:39:23.513Z",
+      "success": {
+        "event": "play_started",
+        "condition": "same content_slug as the unfinished series",
+        "window_hours": 72
+      },
+      "version": "G07@2026-09-30",
+      "target_slug": "guka-kosusa-d2",
+      "status": "failed",
+      "evidence": [
+        "event:c45c6ca2-190d-4b6b-a79d-659d897249c4",
+        "episodes:guka-kosusa-d2",
+        "goal_rule:G07"
+      ],
+      "action_ids": [
+        "A-492c10b0f5461fe016d7"
+      ],
+      "rule_history": [],
+      "plan": {
+        "intended_behavior_change": "resume_series_3d",
+        "review_on": [
+          "goal_success_signal",
+          "subscription_change",
+          "dialect_change",
+          "goal_deadline",
+          "goal_rule_correction"
+        ]
+      },
+      "reason_summary": "Choose a measurable lifecycle step from code-proven eligibility, with proportionate home-page assistance.",
+      "judgment": {
+        "goal_instance_id": "G-4b941dee27bd262e0c40",
+        "goal_id": "G07",
+        "user_id": "U-02992",
+        "rule_version": "G07@2026-09-30",
+        "started_at": "2026-10-01T03:39:23.513Z",
+        "deadline": "2026-10-04T03:39:23.513Z",
+        "judged_at": "2026-10-15T18:30:00.000Z",
+        "status": "failed",
+        "evidence": [],
+        "evidence_event_ids": [],
+        "success_at": null,
+        "coverage_complete": true,
+        "rule_history": [],
+        "reason": "The complete observed goal window ended without its required signal.",
+        "attribution": {
+          "classification": "no_success_observed",
+          "linked_success_event_ids": [],
+          "observed_exposure_event_ids": [
+            "oua-018653"
+          ],
+          "confirmed_delivery_event_ids": [],
+          "causal_claim": false,
+          "note": "Temporal/session linkage is descriptive; causal impact is estimated by randomized assignment."
+        }
+      }
+    }
+  ],
+  "facts_as_of": "2026-10-15T18:30:00.000Z",
+  "observed_outcomes": [
+    {
+      "goal_instance_id": "G-4b941dee27bd262e0c40",
+      "status": "failed",
+      "evidence": []
+    }
+  ],
+  "learning": [
+    {
+      "goal_instance_id": "G-4b941dee27bd262e0c40",
+      "observed_status": "failed",
+      "evidence": [],
+      "note": "Observed result, not an individual causal effect."
+    }
+  ],
+  "revision": 36
+}

@@ -1,0 +1,231 @@
+{
+  "last_event_id": "oua-002287",
+  "last_known_at": "2026-10-15T14:22:07.000Z",
+  "user_id": "U-00327",
+  "active_goal": null,
+  "last_decision_id": "D-1a1efb40d113f8e6d6fd",
+  "active_plan": null,
+  "facts": {
+    "user_id": "U-00327",
+    "dialect": "d3",
+    "language": null,
+    "subscription_status": "active",
+    "signup_at": "2024-10-26T05:51:52.933Z",
+    "signup_age_days": 719.5264706828704,
+    "plan_started_at": null,
+    "plan_ends_at": "2026-10-28T20:10:38.317Z",
+    "ever_paid": true,
+    "notifications_opt_in": true,
+    "whatsapp_opt_in": false,
+    "provenance": {
+      "dialect": {
+        "value": "d3",
+        "status": "known",
+        "source": "app_settings_feed",
+        "evidence_refs": [
+          "event:oua-002287"
+        ],
+        "known_at": "2026-10-15T14:22:07.000Z",
+        "freshness_s": 14873.0,
+        "conflicts": [
+          {
+            "source": "profile:U-00327@2026-09-29T13:29:47.823Z",
+            "value": "d4"
+          }
+        ],
+        "resolution": "Current fresh app setting determines displayed dialect; no profile/link substitution for invalid settings.",
+        "raw_value": "d3"
+      },
+      "language": {
+        "value": null,
+        "status": "unknown",
+        "source": "app_settings_feed",
+        "evidence_refs": [
+          "event:oua-002287"
+        ],
+        "known_at": "2026-10-15T14:22:07.000Z",
+        "freshness_s": 14873.0,
+        "conflicts": [],
+        "resolution": ""
+      },
+      "signup_at": {
+        "value": "2024-10-26T05:51:52.933Z",
+        "status": "known",
+        "source": "profile_or_signup_event",
+        "evidence_refs": [
+          "profile:U-00327@2026-09-29T13:29:47.823Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": ""
+      },
+      "subscription_status": {
+        "value": "active",
+        "status": "known",
+        "source": "billing_events_reconciled_with_profile",
+        "evidence_refs": [
+          "profile:U-00327@2026-09-29T13:29:47.823Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Compare event-time estimate with fact update time; preserve ever-paid evidence and expire dated plans."
+      },
+      "ever_paid": {
+        "value": true,
+        "status": "known",
+        "source": "paid_history_or_profile",
+        "evidence_refs": [
+          "event:1c1a8ada-31cd-45e0-9584-a175b810ef75"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Paid events take precedence. Conflicting profile-only paid/never versions leave lifetime payment unknown."
+      },
+      "notifications_opt_in": {
+        "value": true,
+        "status": "known",
+        "source": "consent_profile_with_optout_override",
+        "evidence_refs": [
+          "profile:U-00327@2026-09-29T13:29:47.823Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Only explicit affirmative consent permits an outbound channel."
+      },
+      "whatsapp_opt_in": {
+        "value": false,
+        "status": "known",
+        "source": "consent_profile_with_optout_override",
+        "evidence_refs": [
+          "profile:U-00327@2026-09-29T13:29:47.823Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Only explicit affirmative consent permits an outbound channel."
+      }
+    },
+    "behavior": {
+      "play_count": 13,
+      "completion_count": 6,
+      "play_days_14d": [
+        "2026-10-05",
+        "2026-10-11",
+        "2026-10-13"
+      ],
+      "top_genres": [
+        "Crime",
+        "Thriller",
+        "Action"
+      ],
+      "genre_counts": {
+        "Crime": 8,
+        "Thriller": 4,
+        "Action": 4,
+        "Family": 2
+      },
+      "unfinished_series": [
+        {
+          "content_slug": "pima-pana-d3",
+          "last_play_at": "2026-10-13T13:32:59.000Z",
+          "recency_uncertain": false,
+          "next_episode_id": "pima-pana-d3-s1e1",
+          "next_episode_number": 1,
+          "remaining_count": 22,
+          "evidence_refs": [
+            "event:oua-002283",
+            "episodes:pima-pana-d3"
+          ]
+        },
+        {
+          "content_slug": "jakasa-dapi-d3",
+          "last_play_at": "2026-10-11T08:25:06.000Z",
+          "recency_uncertain": false,
+          "next_episode_id": "jakasa-dapi-d3-s1e3",
+          "next_episode_number": 3,
+          "remaining_count": 17,
+          "evidence_refs": [
+            "event:oua-002279",
+            "episodes:jakasa-dapi-d3"
+          ]
+        },
+        {
+          "content_slug": "haja-d3",
+          "last_play_at": "2026-10-05T15:44:48.000Z",
+          "recency_uncertain": false,
+          "next_episode_id": "haja-d3-s1e1",
+          "next_episode_number": 1,
+          "remaining_count": 49,
+          "evidence_refs": [
+            "event:oua-002276",
+            "episodes:haja-d3"
+          ]
+        },
+        {
+          "content_slug": "lomobha-moni-d3",
+          "last_play_at": "2026-10-01T12:53:57.937Z",
+          "recency_uncertain": false,
+          "next_episode_id": "lomobha-moni-d3-s1e2",
+          "next_episode_number": 2,
+          "remaining_count": 34,
+          "evidence_refs": [
+            "event:oua-002272",
+            "episodes:lomobha-moni-d3"
+          ]
+        },
+        {
+          "content_slug": "yane-tegi-d3",
+          "last_play_at": "2026-09-19T12:06:04.957Z",
+          "recency_uncertain": false,
+          "next_episode_id": "yane-tegi-d3-s1e2",
+          "next_episode_number": 2,
+          "remaining_count": 19,
+          "evidence_refs": [
+            "event:cb7a5087-8552-4bf4-bfd6-c97caa1e6d27",
+            "episodes:yane-tegi-d3"
+          ]
+        }
+      ],
+      "prior_app_open_count_14d": 6,
+      "uncertain_play_count_14d": 0,
+      "uncertain_open_count_14d": 0,
+      "last_play_at": "2026-10-13T13:32:59.000Z",
+      "last_app_open_before_trigger": "2026-10-15T14:22:00.000Z",
+      "play_evidence": [
+        "event:0fcc06b7-b343-49ef-a5fe-2e5f4e650b46",
+        "event:oua-002272",
+        "event:oua-002276",
+        "event:oua-002279",
+        "event:oua-002283"
+      ],
+      "completion_evidence": [
+        "event:0660e80b-b283-40b5-b6c5-f03a6900b2b7",
+        "event:oua-002273",
+        "event:oua-002280"
+      ],
+      "recent_open_evidence": [
+        "event:oua-002284",
+        "event:oua-002288",
+        "event:oua-002286"
+      ]
+    },
+    "observation_coverage": {
+      "start": "2026-08-31T18:30:00.000Z",
+      "end": "2026-10-15T18:30:00.000Z",
+      "lifetime_from_signup": false,
+      "covers_prior_14d": true,
+      "assumption": "Supplied historical export covers instrumented app activity within its stated window; offline arrivals can still revise facts."
+    },
+    "trigger_buffered_s": 0.0,
+    "trigger_is_fresh": true
+  },
+  "goal_history": [],
+  "facts_as_of": "2026-10-15T18:30:00.000Z",
+  "observed_outcomes": [],
+  "learning": [],
+  "revision": 22
+}

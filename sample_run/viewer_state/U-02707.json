@@ -1,0 +1,262 @@
+{
+  "last_event_id": "oua-017062",
+  "last_known_at": "2026-10-14T13:13:21.000Z",
+  "user_id": "U-02707",
+  "active_goal": null,
+  "last_decision_id": "D-9109d3a7e2b7ecfb439a",
+  "active_plan": null,
+  "facts": {
+    "user_id": "U-02707",
+    "dialect": "d1",
+    "language": null,
+    "subscription_status": "active",
+    "signup_at": "2025-03-01T11:55:26.632Z",
+    "signup_age_days": 593.2739973148148,
+    "plan_started_at": "2026-09-27T14:52:33.761Z",
+    "plan_ends_at": "2026-10-27T14:52:33.761Z",
+    "ever_paid": true,
+    "notifications_opt_in": true,
+    "whatsapp_opt_in": false,
+    "provenance": {
+      "dialect": {
+        "value": "d1",
+        "status": "known",
+        "source": "app_settings_feed",
+        "evidence_refs": [
+          "event:oua-017062"
+        ],
+        "known_at": "2026-10-14T13:13:21.000Z",
+        "freshness_s": 105399.0,
+        "conflicts": [
+          {
+            "source": "profile:U-02707@2026-09-29T10:01:16.051Z",
+            "value": "d4"
+          }
+        ],
+        "resolution": "Current fresh app setting determines displayed dialect; no profile/link substitution for invalid settings.",
+        "raw_value": "d1"
+      },
+      "language": {
+        "value": null,
+        "status": "unknown",
+        "source": "app_settings_feed",
+        "evidence_refs": [
+          "event:oua-017062"
+        ],
+        "known_at": "2026-10-14T13:13:21.000Z",
+        "freshness_s": 105399.0,
+        "conflicts": [],
+        "resolution": ""
+      },
+      "signup_at": {
+        "value": "2025-03-01T11:55:26.632Z",
+        "status": "known",
+        "source": "profile_or_signup_event",
+        "evidence_refs": [
+          "profile:U-02707@2026-09-29T10:01:16.051Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": ""
+      },
+      "subscription_status": {
+        "value": "active",
+        "status": "known",
+        "source": "billing_events_reconciled_with_profile",
+        "evidence_refs": [
+          "profile:U-02707@2026-09-29T10:01:16.051Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Compare event-time estimate with fact update time; preserve ever-paid evidence and expire dated plans."
+      },
+      "ever_paid": {
+        "value": true,
+        "status": "known",
+        "source": "paid_history_or_profile",
+        "evidence_refs": [
+          "event:7d764068-a637-496d-ba0f-e001cd5aa12d"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Paid events take precedence. Conflicting profile-only paid/never versions leave lifetime payment unknown."
+      },
+      "notifications_opt_in": {
+        "value": true,
+        "status": "known",
+        "source": "consent_profile_with_optout_override",
+        "evidence_refs": [
+          "profile:U-02707@2026-09-29T10:01:16.051Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Only explicit affirmative consent permits an outbound channel."
+      },
+      "whatsapp_opt_in": {
+        "value": false,
+        "status": "known",
+        "source": "consent_profile_with_optout_override",
+        "evidence_refs": [
+          "profile:U-02707@2026-09-29T10:01:16.051Z"
+        ],
+        "known_at": "2026-09-30T00:00:00.000Z",
+        "freshness_s": 1362600.0,
+        "conflicts": [],
+        "resolution": "Only explicit affirmative consent permits an outbound channel."
+      }
+    },
+    "behavior": {
+      "play_count": 8,
+      "completion_count": 4,
+      "play_days_14d": [
+        "2026-10-10",
+        "2026-10-14"
+      ],
+      "top_genres": [
+        "Thriller",
+        "Drama",
+        "Action"
+      ],
+      "genre_counts": {
+        "Thriller": 5,
+        "Drama": 3,
+        "Action": 2,
+        "Devotional": 1,
+        "Family": 1,
+        "Romance": 1,
+        "Comedy": 1
+      },
+      "unfinished_series": [
+        {
+          "content_slug": "tidha-dakachu-d1",
+          "last_play_at": "2026-09-22T15:21:01.686Z",
+          "recency_uncertain": false,
+          "next_episode_id": "tidha-dakachu-d1-s1e1",
+          "next_episode_number": 1,
+          "remaining_count": 17,
+          "evidence_refs": [
+            "event:b9f3da3c-454f-4a8a-821d-df81db05d663",
+            "episodes:tidha-dakachu-d1"
+          ]
+        }
+      ],
+      "prior_app_open_count_14d": 4,
+      "uncertain_play_count_14d": 0,
+      "uncertain_open_count_14d": 0,
+      "last_play_at": "2026-10-14T13:13:21.000Z",
+      "last_app_open_before_trigger": "2026-10-14T13:10:00.000Z",
+      "play_evidence": [
+        "event:7d85fb95-807e-4bdc-a90c-503ee9377348",
+        "event:b9f3da3c-454f-4a8a-821d-df81db05d663",
+        "event:oua-017056",
+        "event:oua-017052",
+        "event:oua-017062"
+      ],
+      "completion_evidence": [
+        "event:a1ea0e77-a69a-4eb3-97b6-21cfdfcb8f74",
+        "event:oua-017057",
+        "event:oua-017053"
+      ],
+      "recent_open_evidence": [
+        "event:oua-017050",
+        "event:oua-017058",
+        "event:oua-017060"
+      ]
+    },
+    "observation_coverage": {
+      "start": "2026-08-31T18:30:00.000Z",
+      "end": "2026-10-15T18:30:00.000Z",
+      "lifetime_from_signup": false,
+      "covers_prior_14d": true,
+      "assumption": "Supplied historical export covers instrumented app activity within its stated window; offline arrivals can still revise facts."
+    },
+    "trigger_buffered_s": 0.0,
+    "trigger_is_fresh": true
+  },
+  "goal_history": [
+    {
+      "goal_instance_id": "G-6075bbb31f8dfb95c5c7",
+      "id": "G07",
+      "goal_id": "G07",
+      "user_id": "U-02707",
+      "started_at": "2026-10-01T12:47:13.579Z",
+      "deadline": "2026-10-04T12:47:13.579Z",
+      "success": {
+        "event": "play_started",
+        "condition": "same content_slug as the unfinished series",
+        "window_hours": 72
+      },
+      "version": "G07@2026-09-30",
+      "target_slug": "tidha-dakachu-d1",
+      "status": "failed",
+      "evidence": [
+        "event:b9f3da3c-454f-4a8a-821d-df81db05d663",
+        "episodes:tidha-dakachu-d1",
+        "goal_rule:G07"
+      ],
+      "action_ids": [
+        "A-bbb0c86480ba07f0738c",
+        "A-207718ed8eda7087b625"
+      ],
+      "rule_history": [],
+      "plan": {
+        "intended_behavior_change": "resume_series_3d",
+        "review_on": [
+          "goal_success_signal",
+          "subscription_change",
+          "dialect_change",
+          "goal_deadline",
+          "goal_rule_correction"
+        ]
+      },
+      "reason_summary": "Retain the eligible active commitment and adapt available content.",
+      "judgment": {
+        "goal_instance_id": "G-6075bbb31f8dfb95c5c7",
+        "goal_id": "G07",
+        "user_id": "U-02707",
+        "rule_version": "G07@2026-09-30",
+        "started_at": "2026-10-01T12:47:13.579Z",
+        "deadline": "2026-10-04T12:47:13.579Z",
+        "judged_at": "2026-10-15T18:30:00.000Z",
+        "status": "failed",
+        "evidence": [],
+        "evidence_event_ids": [],
+        "success_at": null,
+        "coverage_complete": true,
+        "rule_history": [],
+        "reason": "The complete observed goal window ended without its required signal.",
+        "attribution": {
+          "classification": "no_success_observed",
+          "linked_success_event_ids": [],
+          "observed_exposure_event_ids": [
+            "oua-017049"
+          ],
+          "confirmed_delivery_event_ids": [],
+          "causal_claim": false,
+          "note": "Temporal/session linkage is descriptive; causal impact is estimated by randomized assignment."
+        }
+      }
+    }
+  ],
+  "facts_as_of": "2026-10-15T18:30:00.000Z",
+  "observed_outcomes": [
+    {
+      "goal_instance_id": "G-6075bbb31f8dfb95c5c7",
+      "status": "failed",
+      "evidence": []
+    }
+  ],
+  "learning": [
+    {
+      "goal_instance_id": "G-6075bbb31f8dfb95c5c7",
+      "observed_status": "failed",
+      "evidence": [],
+      "note": "Observed result, not an individual causal effect."
+    }
+  ],
+  "revision": 19
+}
